@@ -79,30 +79,65 @@ h2 {
 }
 #wrapper {
   margin: 0 auto;
-  max-width: 1280px;
+  display: table;
 }
+
 #shell {
   height: 100%;
   padding: 0 10%;
 }
 #skills, #bio, #projects, #history {
-  background-color: #c9d5df;
   margin: 10px 0;
   display: inline-block;
 }
-#bio {
+#bio, #projects, #history, .skill_bar{
+  background-color: #c9d5df;
+}
+#bio, #history{
   width: 55%;
   float: left;
+  clear: left;
 }
-#skills {
+#skills, #projects{
   float: right;
   width: 40%;
+  clear: right
 }
-#projects {
+#skills, .skill_point {
+
+}
+.skill_name, .skill_point {
+  width: 40px;
+  height: 15px;
+  padding: 10px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  padding: auto;
+  vertical-align: top;
+}
+.skill_bar {
+  width: 500px;
+  height: 35px;
+  margin: 10px 0;
+}
+.skill_point {
+  background-color: #e3791c;
 }
 h1, h2, #contact_bar {
   padding: 5px;
+  display: inline;
+}
+.circle_image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: inline;
 }
 html {
   background-color: #fcfaf8;
 }
+#john_title {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  font-size: 50px;
+}5
