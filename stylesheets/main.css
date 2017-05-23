@@ -52,7 +52,7 @@ table {
 header{
   width: 100%;
   background-color: #c9d5df;
-  padding: 10px;
+  padding: 10px 0;
 }
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -63,11 +63,46 @@ h1 {
 h2 {
   font-size: 1.17em;
 }
-#nav_bar {
+#masthead {
   height: 50px;
   background-color: #202c36;
 }
+#dot {
+  background-color: #e4a166;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  float: right;
+  margin: 10px;
+}
+#intro {
+}
+#wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+#shell {
+  height: 100%;
+  padding: 0 10%;
+}
+#skills, #bio, #projects, #history {
+  background-color: #c9d5df;
+  margin: 10px 0;
+  display: inline-block;
+}
+#bio {
+  width: 55%;
+  float: left;
+}
+#skills {
+  float: right;
+  width: 40%;
+}
+#projects {
+}
 h1, h2, #contact_bar {
   padding: 5px;
-  border: black 1px solid;
+}
+html {
+  background-color: #fcfaf8;
 }
