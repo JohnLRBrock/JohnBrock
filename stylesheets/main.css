@@ -108,20 +108,21 @@ h2 {
 }
 .skill_name, .skill_point {
   width: 40px;
-  height: 15px;
+  height: 12px;
   padding: 10px;
   margin: 0 10px 0 0;
   display: inline-block;
   padding: auto;
   vertical-align: top;
+  background-color: #e3791c;
 }
 .skill_bar {
   width: 500px;
-  height: 35px;
+  height: 32px;
   margin: 10px 0;
 }
 .skill_point {
-  background-color: #e3791c;
+  border-radius: 10px;
 }
 h1, h2, #contact_bar {
   padding: 5px;
@@ -135,9 +136,10 @@ h1, h2, #contact_bar {
 }
 html {
   background-color: #fcfaf8;
+  color: #202c36;
 }
 #john_title {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
   font-size: 50px;
-}5
+}
