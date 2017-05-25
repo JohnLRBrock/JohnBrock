@@ -90,6 +90,7 @@ h2 {
 #skills, #bio, #projects, #history {
   margin: 10px 0;
   display: inline-block;
+  border-radius: 5px;
 }
 #bio, #projects, .skill_bar, #history .item{
   background-color: #c9d5df;
@@ -157,4 +158,22 @@ html {
 a {
   color: #202c36;
   text-decoration: none;
+}
+.project img {
+  height: 100px;
+  width: 100px;
+}
+#resume {
+  height: 20px;
+  width: 65px;
+  background-color: #e3791c;
+  border: solid 1px #202c36;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px 0;
+  float: right;
+  clear: right;
+}
+#resume h2 {
+  padding: 0;
 }
