@@ -92,7 +92,7 @@ h2 {
   display: inline-block;
   border-radius: 5px;
 }
-#bio, #projects, .skill_bar, #history .item{
+#bio, #projects, .skill_bar, #history{
   background-color: #c9d5df;
 }
 #bio, #history{
@@ -136,7 +136,7 @@ h1, h2, #contact_bar {
   height: 100px;
   display: inline;
 }
-#bio {
+#bio, #history {
   padding: 5px;
 }
 #bio h2, #history h2{
