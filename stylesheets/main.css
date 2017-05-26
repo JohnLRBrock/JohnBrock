@@ -104,15 +104,31 @@ h2 {
   width: 40%;
   clear: right
 }
-.skill_name, .skill_point {
+.skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
   width: 40px;
   height: 12px;
   padding: 10px;
-  margin: 0 10px 0 0;
   display: inline-block;
   padding: auto;
   vertical-align: top;
-  background-color: #e3791c;
+  background-color: #5f82a0;
+  font-weight: bold;
+  font-size: 1em;
+}
+.skill_point_1{
+  width: 75px;
+}
+.skill_point_2{
+  width: 150px;
+}
+.skill_point_3{
+  width: 225px;
+}
+.skill_point_4{
+  width: 300px;
+}
+.skill_point_5{
+  width: 350px;
 }
 .skill_bar {
   width: 500px;
