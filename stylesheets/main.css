@@ -75,8 +75,6 @@ h2 {
   float: right;
   margin: 10px;
 }
-#intro {
-}
 #wrapper {
   margin: 0 auto;
   display: table;
@@ -99,14 +97,12 @@ h2 {
   width: 55%;
   float: left;
   clear: left;
+  padding: 5px;
 }
 #skills, #projects{
   float: right;
   width: 40%;
   clear: right
-}
-#skills, .skill_point {
-
 }
 .skill_name, .skill_point {
   width: 40px;
@@ -135,9 +131,6 @@ h1, h2, #contact_bar {
   width: 100px;
   height: 100px;
   display: inline;
-}
-#bio, #history {
-  padding: 5px;
 }
 #bio h2, #history h2{
   padding: 0;
