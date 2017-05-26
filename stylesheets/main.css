@@ -189,3 +189,6 @@ a {
 i {
   color: #202c36;
 }
+.item a {
+  text-decoration: underline;
+}
