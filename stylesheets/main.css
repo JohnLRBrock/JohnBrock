@@ -177,3 +177,15 @@ a {
 #resume h2 {
   padding: 0;
 }
+#contact_bar h2 {
+  float: left;
+}
+#contact .icons {
+  float: right;
+}
+.fa-stack-2x {
+  color: #e3791c;
+}
+i {
+  color: #202c36;
+}
