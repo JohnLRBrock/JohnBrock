@@ -111,34 +111,28 @@ h2 {
 #skills{
   float: left;
   width: 40%;
-  clear: left;
-}
-.skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
-  width: 40px;
-  height: 12px;
-  padding: 10px;
-  display: inline-block;
-  padding: auto;
-  vertical-align: top;
-  background-color: #5f82a0;
-  font-size: 1em;
-  border-radius: 15px 0 0 15px;
-}
-.skill_point_1{
-  width: 75px;
-}
-.skill_point_2{
-  width: 150px;
-}
-.skill_point_3{
-  width: 225px;
-}
-.skill_point_4{
-  width: 300px;
-}
-.skill_point_5{
-  width: 350px;
-}
+  clear: left;}
+  .skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
+    width: 40px;
+    height: 12px;
+    padding: 10px;
+    display: inline-block;
+    padding: auto;
+    vertical-align: top;
+    background-color: #5f82a0;
+    font-size: 1em;
+    border-radius: 15px 0 0 15px;}
+  .skill_point_1{
+    width: 75px;}
+  .skill_point_2{
+    width: 150px;}
+  .skill_point_3{
+    width: 225px;}
+  .skill_point_4{
+    width: 300px;}
+  .skill_point_5{
+    width: 350px;}
+
 .skill_bar {
   width: 500px;
   height: 32px;
