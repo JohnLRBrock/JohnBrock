@@ -96,6 +96,10 @@ h2 {
 }
 #bio, #projects, .skill_bar, #history{
   background-color: #c9d5df;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
+}
+#intro {
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
 }
 #bio, #history{
   width: 55%;
