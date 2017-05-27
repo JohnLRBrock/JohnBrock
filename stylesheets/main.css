@@ -173,9 +173,27 @@ a {
   color: #202c36;
   text-decoration: none;
 }
+.project {
+  display: block;
+  clear: left;
+  height: 150px;
+  border: solid 1px #202c36;
+  border-top: none;
+}
+#music-sharer {
+  border-top: solid 1px #202c36;
+}
 .project img {
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+  float: left;
+  margin-right: 5px;
+}
+.project a img, .project h2 {
+  display: inline-block;
+}
+.project h2 {
+  padding: 0;
 }
 #resume {
   height: 20px;
