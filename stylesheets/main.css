@@ -90,9 +90,15 @@ h2 {
   margin: 0 auto;
   max-width: 1050px;
 }
-#skills, #bio, #projects, #history {
+#skills, #bio {
   margin: 10px 0;
   border-radius: 5px;
+}
+#bio, #history {
+  margin-top: 0;
+}
+#projects {
+  margin-top: 10px;
 }
 #bio, #projects, .skill_bar, #history{
   background-color: #c9d5df;
@@ -107,7 +113,9 @@ h2 {
 #skills{
   float: left;
   width: 40%;
-  clear: left;}
+  clear: left;
+  margin-top: 0;
+  margin-bottom: 0;}
   .skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
     width: 40px;
     height: 12px;
@@ -180,11 +188,6 @@ a {
 .project {
   display: block;
   height: 150px;
-  border: solid 1px #202c36;
-  border-top: none;
-}
-#music-sharer {
-  border-top: solid 1px #202c36;
 }
 .project img {
   height: 150px;
@@ -197,6 +200,7 @@ a {
 }
 .project h2 {
   padding: 0;
+  padding-top: 2px;
 }
 #resume {
   height: 20px;
@@ -224,9 +228,7 @@ i {
 .item a {
   text-decoration: underline;
 }
-#projects{
-  float: right;
-}
+
 #left-div, #right-div{
   max-width: 500px;
   margin: 10px;
@@ -235,6 +237,7 @@ i {
 }
 #left-div{
   float: left;
+  margin-bottom: 0;
 }
 #right-div{
 }
