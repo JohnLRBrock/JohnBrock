@@ -162,6 +162,18 @@ h1, h2, #contact_bar {
   #contact_bar h2{
     padding-left: 0;
     padding-top: 10px;}
+  .icon-circle {
+    background-color: #e3791c;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: solid 2px #202c36;}
+    .icon-circle .fa-stack-1x {
+      position: absolute;
+      left: 0px;
+      bottom: 1px;
+    }
 
 .circle_image {
   border-radius: 50%;
@@ -203,18 +215,20 @@ a {
   padding-top: 2px;
 }
 #resume {
-  height: 20px;
+  height: 16px;
   width: 65px;
   background-color: #e3791c;
-  border: solid 1px #202c36;
+  border: solid 2px #202c36;
   border-radius: 10px;
   padding: 5px;
-  margin: 5px 0;
+  margin-top: 5px;
   float: right;
   clear: right;
 }
 #resume h2 {
   padding: 0;
+  position: absolute;
+  bottom: 4px;
 }
 #contact_bar h2 {
   float: left;
@@ -243,6 +257,6 @@ i {
 }
 #history #resume{
   position: relative;
-  bottom: 38px;
+  bottom: 36px;
   right: 0;
 }
