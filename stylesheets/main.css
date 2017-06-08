@@ -96,6 +96,7 @@ h2 {
 }
 #bio, #history {
   margin-top: 0;
+  border-radius: 5px;
 }
 #projects {
   margin-top: 10px;}
