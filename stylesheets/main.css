@@ -23,6 +23,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  font-family: 'open sans'
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -63,9 +64,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 2em;
+  font-family: 'Raleway', sans-serif;
 }
 h2 {
   font-size: 1.17em;
+  font-size: 18px;
 }
 #masthead {
   height: 50px;
@@ -144,7 +147,7 @@ h2 {
   height: 32px;
   margin: 5px 0;
   border-radius: 15px;
-  color: #c9d5df;
+  color: #fcfaf8;
 }
 .skill_bar_first{
   margin: 0 0 5px 0;
@@ -154,13 +157,13 @@ h1, h2, #contact_bar {
   display: inline;
 }
 #contact_bar {
-  width: 520px;
+  width: 583px;
   display: block;}
   #contact_bar #social-network-icons{
   float: right;
   display: inline-block;
   height: 40px;
-  width: 183px;}
+  width: 185px;}
   #contact_bar h2{
     padding-left: 0;
     padding-top: 10px;}
@@ -218,7 +221,7 @@ a {
 }
 #resume {
   height: 16px;
-  width: 65px;
+  width: 70px;
   background-color: #e3791c;
   border: solid 2px #202c36;
   border-radius: 10px;
