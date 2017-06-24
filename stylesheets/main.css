@@ -49,6 +49,8 @@ table {
   border-spacing: 0;
 }
 
+
+
 /* John Brock's code */
 html {
   background-color: #fcfaf8;
@@ -59,17 +61,9 @@ header{
   background-color: #c9d5df;
   padding: 10px 0;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
-h1 {
-  font-size: 2em;
-  font-family: 'Raleway', sans-serif;
-}
-h2 {
-  font-size: 1.17em;
-  font-size: 18px;
-}
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+h1 { font-family: 'Raleway', sans-serif; }
+h2 { font-size: 100%; }
 #masthead {
   height: 50px;
   background-color: #202c36;
@@ -109,16 +103,9 @@ h2 {
   background-color: #c9d5df;
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
 }
-#intro {
-  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
-}
-#bio, #history{
-  padding: 5px;
-}
+#intro { box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
+#bio, #history{ padding: 5px; }
 #skills{
-  float: left;
-  width: 40%;
-  clear: left;
   margin-top: 0;
   margin-bottom: 0;}
   .skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
@@ -131,19 +118,13 @@ h2 {
     background-color: #5f82a0;
     font-size: 1em;
     border-radius: 15px 0 0 15px;}
-  .skill_point_1{
-    width: 75px;}
-  .skill_point_2{
-    width: 150px;}
-  .skill_point_3{
-    width: 225px;}
-  .skill_point_4{
-    width: 300px;}
-  .skill_point_5{
-    width: 350px;}
+  .skill_point_1{ width: 17.5%; }
+  .skill_point_2{ width: 35%; }
+  .skill_point_3{ width: 52.5%; }
+  .skill_point_4{ width: 70%; }
+  .skill_point_5{ width: 87.5%; }
 
 .skill_bar {
-  width: 500px;
   height: 32px;
   margin: 5px 0;
   border-radius: 15px;
@@ -163,7 +144,7 @@ h1, h2, #contact_bar {
   float: right;
   display: inline-block;
   height: 40px;
-  width: 185px;}
+  width: 300px;}
   #contact_bar h2{
     padding-left: 0;
     padding-top: 10px;}
@@ -196,7 +177,7 @@ ul{
 #john_title {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-size: 50px;
+  font-size: 300%;
 }
 a {
   color: #202c36;
