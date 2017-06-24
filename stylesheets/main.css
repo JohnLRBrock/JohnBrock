@@ -202,17 +202,26 @@ a {
   color: #202c36;
   text-decoration: none;
 }
+
 .project {
   display: block;
   height: 150px;
 }
-.project img {
+.project .hover-image {
   height: 150px;
   width: 150px;
+  background-size: 150px 150px;
   float: left;
   margin-right: 5px;
 }
-.project a img, .project h2 {
+#dogs-pic        { background-image: url("../assets/dog_bw.jpg"); }
+#dogs-pic:hover  { background-image: url("../assets/dog.jpg"); }
+#music-pic       { background-image: url("../assets/speaker_bw.jpg"); }
+#music-pic:hover { background-image: url("../assets/speaker.jpg"); }
+#books-pic       { background-image: url("../assets/books_bw.jpg"); }
+#books-pic:hover { background-image: url("../assets/books.jpg"); }
+
+.project h2 {
   display: inline-block;
 }
 .project h2 {
