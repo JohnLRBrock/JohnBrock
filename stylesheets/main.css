@@ -23,31 +23,20 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family: 'Montserrat', sans-serif;
-}
+  font-family: 'Montserrat', sans-serif; }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
+footer, header, hgroup, menu, nav, section { display: block; }
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* John Brock's code */
 html {
@@ -71,43 +60,80 @@ h2 { font-size: 100%; }
   float: right;
   margin: 10px;
   display: none; }
-#wrapper {
-  margin: 0 auto;
-  display: block;
-  width: 600px;
-  height: 180px; }
+#intro-bar { 
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
+  height: 170px; }
+  #john_title {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 300%; }
+  #intro {
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 180px; }
+    #id-bar {}
+      .circle_image {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        display: inline; }
+    #tag-line
+    #contact_bar {
+      width: 583px;
+      display: block;
+      height: 100px;}
+      #contact_bar #social-network-icons{
+      float: right;
+      display: inline-block;
+      height: 40px;
+      width: 300px;}
+      #contact_bar h2{
+        padding-left: 0;
+        padding-top: 10px;}
+      .icon-circle {
+        background-color: #e3791c;
+        display: inline-block;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: solid 2px #202c36;}
+        .icon-circle .fa-stack-1x {
+          position: absolute;
+          left: 0px;
+          bottom: 1px; }
 
 #shell {
   display: block;
   margin: 0 auto;
-  max-width: 1150px; }
-#skills, #bio {
-  margin: 10px 0;
-  border-radius: 5px; }
-#bio, #history { border-radius: 5px; }
-#projects { margin-top: 10px;}
-  .project a p { padding-right: 15px; }
-
-#top, #bottom {
-  width: 1050px;
-}
-#bio, #history, #skills, #projects {
+  max-width: 1000px; }
+#top, #bottom { width: 1000px; }
+.border-box {
   margin: 0;
   margin-top: 10px;
   width: 48%;
   display: inline-block;
-  min-width: 484px;
+  width: 495px;
   vertical-align: top;
-  box-sizing: border-box; }
-#bio, #projects, .skill_bar, #history{
-  background-color: #c9d5df;
-  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
-#intro { 
-  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
-  height: 170px; }
+  box-sizing: border-box;}
 #bio, #history{ 
   padding: 5px;
   height: 140px; }
+
+@media only screen and (max-width: 1000px) {
+  #shell, #top, #bottom { width: 100%; }
+  .border-box { 
+    width: 100%;
+    height: initial; }
+}
+#bio, #projects, .skill_bar, #history{
+  background-color: #c9d5df;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
+#skills, #bio {
+  border-radius: 5px; }
+#bio, #history { border-radius: 5px; }
+#projects { margin-top: 10px;}
+  .project a p { padding-right: 15px; }
 #skills{ }
   .skill-fill {
     width: 40px;
@@ -132,46 +158,14 @@ h2 { font-size: 100%; }
   color: #fcfaf8; }
 .skill_bar_first{
   margin: 0 0 5px 0; }
-h1, h2, #contact_bar {
-  padding: 5px;
+h1, h2 {
   display: inline; }
-#contact_bar {
-  width: 583px;
-  display: block;}
-  #contact_bar #social-network-icons{
-  float: right;
-  display: inline-block;
-  height: 40px;
-  width: 300px;}
-  #contact_bar h2{
-    padding-left: 0;
-    padding-top: 10px;}
-  .icon-circle {
-    background-color: #e3791c;
-    display: inline-block;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    border: solid 2px #202c36;}
-    .icon-circle .fa-stack-1x {
-      position: absolute;
-      left: 0px;
-      bottom: 1px; }
 
-.circle_image {
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
-  display: inline; }
 #bio h2, #history h2{
   padding: 0; }
 ul{
   list-style: circle;
   margin-left: 20px; }
-#john_title {
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
-  font-size: 300%; }
 a {
   color: #202c36;
   text-decoration: none; }
