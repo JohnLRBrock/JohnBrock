@@ -1,9 +1,3 @@
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -22,75 +16,62 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-  font-family: 'Montserrat', sans-serif; }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section { display: block; }
-body { line-height: 1; }
-ol, ul { list-style: none; }
-blockquote, q { quotes: none; }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+  vertical-align: baseline;}
 
-/* John Brock's code */
 html {
   background-color: #fcfaf8;
-  color: #202c36; }
+  color: #202c36;
+  font-family: 'Montserrat', sans-serif; }
+body { line-height: 1; }
 header{
   width: 100%;
   background-color: #c9d5df;
   padding: 10px 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-h1 { font-family: 'Raleway', sans-serif; }
+.shadow { box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
 h2 { font-size: 100%; }
 #masthead {
   height: 50px;
   background-color: #202c36; }
-#dot {
-  background-color: #e4a166;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  float: right;
-  margin: 10px;
-  display: none; }
-#intro-bar { 
-  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
-  height: 170px; }
-  #john_title {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    font-size: 300%; }
+  #dot {
+    background-color: #e4a166;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    float: right;
+    margin: 10px;
+    display: none; }
+
+#intro-bar { height: 170px; }
   #intro {
     margin: 0 auto;
     display: block;
     width: 600px;
     height: 180px; }
     #id-bar {}
+      #john_title {
+        font-family: 'Raleway', sans-serif;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+        font-size: 300%; }
       .circle_image {
         border-radius: 50%;
         width: 100px;
         height: 100px;
         display: inline; }
-    #tag-line
+    #tag-line {}
     #contact_bar {
       width: 583px;
       display: block;
-      height: 100px;}
+      height: 100px; }
       #contact_bar #social-network-icons{
       float: right;
       display: inline-block;
       height: 40px;
-      width: 300px;}
-      #contact_bar h2{
+      width: 300px; }
+      #phone-number{
         padding-left: 0;
-        padding-top: 10px;}
+        padding-top: 10px; }
       .icon-circle {
         background-color: #e3791c;
         display: inline-block;
@@ -103,22 +84,21 @@ h2 { font-size: 100%; }
           left: 0px;
           bottom: 1px; }
 
-#shell {
+#content-area {
   display: block;
   margin: 0 auto;
   max-width: 1000px; }
-#top, #bottom { width: 1000px; }
-.border-box {
-  margin: 0;
-  margin-top: 10px;
-  width: 48%;
-  display: inline-block;
-  width: 495px;
-  vertical-align: top;
-  box-sizing: border-box;}
-#bio, #history{ 
-  padding: 5px;
-  height: 140px; }
+  #top, #bottom { width: 1000px; }
+  .border-box {
+    margin: 0;
+    margin-top: 10px;
+    display: inline-block;
+    width: 495px;
+    vertical-align: top;
+    box-sizing: border-box;}
+  .text-box{ 
+    padding: 6px;
+    height: 145px; }
 
 @media only screen and (max-width: 1000px) {
   #shell, #top, #bottom { width: 100%; }
@@ -126,15 +106,13 @@ h2 { font-size: 100%; }
     width: 100%;
     height: initial; }
 }
-#bio, #projects, .skill_bar, #history{
-  background-color: #c9d5df;
-  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
+#bio, #projects, .skill_bar, #history{ background-color: #c9d5df; }
 #skills, #bio {
   border-radius: 5px; }
 #bio, #history { border-radius: 5px; }
 #projects { margin-top: 10px;}
   .project a p { padding-right: 15px; }
-#skills{ }
+#skills{ padding: 0 20px; }
   .skill-fill {
     width: 40px;
     height: 12px;
