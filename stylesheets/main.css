@@ -49,25 +49,20 @@ table {
   border-spacing: 0;
 }
 
-
-
 /* John Brock's code */
 html {
   background-color: #fcfaf8;
-  color: #202c36;
-}
+  color: #202c36; }
 header{
   width: 100%;
   background-color: #c9d5df;
-  padding: 10px 0;
-}
+  padding: 10px 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 h1 { font-family: 'Raleway', sans-serif; }
 h2 { font-size: 100%; }
 #masthead {
   height: 50px;
-  background-color: #202c36;
-}
+  background-color: #202c36; }
 #dot {
   background-color: #e4a166;
   height: 25px;
@@ -75,40 +70,46 @@ h2 { font-size: 100%; }
   border-radius: 50%;
   float: right;
   margin: 10px;
-  display: none;
-}
+  display: none; }
 #wrapper {
   margin: 0 auto;
-  display: table;
-}
+  display: block;
+  width: 600px;
+  height: 180px; }
 
 #shell {
   display: block;
   margin: 0 auto;
-  max-width: 1050px;
-}
+  max-width: 1150px; }
 #skills, #bio {
   margin: 10px 0;
-  border-radius: 5px;
-}
-#bio, #history {
-  margin-top: 0;
-  border-radius: 5px;
-}
-#projects {
-  margin-top: 10px;}
+  border-radius: 5px; }
+#bio, #history { border-radius: 5px; }
+#projects { margin-top: 10px;}
   .project a p { padding-right: 15px; }
 
+#top, #bottom {
+  width: 1050px;
+}
+#bio, #history, #skills, #projects {
+  margin: 0;
+  margin-top: 10px;
+  width: 48%;
+  display: inline-block;
+  min-width: 484px;
+  vertical-align: top;
+  box-sizing: border-box; }
 #bio, #projects, .skill_bar, #history{
   background-color: #c9d5df;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
+#intro { 
   box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05);
-}
-#intro { box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
-#bio, #history{ padding: 5px; }
-#skills{
-  margin-top: 0;
-  margin-bottom: 0;}
-  .skill_point_1, .skill_point_2, .skill_point_3, .skill_point_4, .skill_point_5 {
+  height: 170px; }
+#bio, #history{ 
+  padding: 5px;
+  height: 140px; }
+#skills{ }
+  .skill-fill {
     width: 40px;
     height: 12px;
     padding: 10px;
@@ -128,15 +129,12 @@ h2 { font-size: 100%; }
   height: 32px;
   margin: 5px 0;
   border-radius: 15px;
-  color: #fcfaf8;
-}
+  color: #fcfaf8; }
 .skill_bar_first{
-  margin: 0 0 5px 0;
-}
+  margin: 0 0 5px 0; }
 h1, h2, #contact_bar {
   padding: 5px;
-  display: inline;
-}
+  display: inline; }
 #contact_bar {
   width: 583px;
   display: block;}
@@ -158,43 +156,35 @@ h1, h2, #contact_bar {
     .icon-circle .fa-stack-1x {
       position: absolute;
       left: 0px;
-      bottom: 1px;
-    }
+      bottom: 1px; }
 
 .circle_image {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  display: inline;
-}
+  display: inline; }
 #bio h2, #history h2{
-  padding: 0;
-}
+  padding: 0; }
 ul{
   list-style: circle;
-  margin-left: 20px;
-}
+  margin-left: 20px; }
 #john_title {
   padding: 0 0 0 0;
   margin: 0 0 0 0;
-  font-size: 300%;
-}
+  font-size: 300%; }
 a {
   color: #202c36;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .project {
   display: block;
-  height: 150px;
-}
+  height: 150px; }
 .project .hover-image {
   height: 150px;
   width: 150px;
   background-size: 150px 150px;
   float: left;
-  margin-right: 5px;
-}
+  margin-right: 5px; }
 #dogs-pic        { background-image: url("../assets/dog_bw.jpg"); }
 #dogs-pic:hover  { background-image: url("../assets/dog.jpg"); }
 #music-pic       { background-image: url("../assets/speaker_bw.jpg"); }
@@ -202,13 +192,10 @@ a {
 #books-pic       { background-image: url("../assets/books_bw.jpg"); }
 #books-pic:hover { background-image: url("../assets/books.jpg"); }
 
-.project h2 {
-  display: inline-block;
-}
+.project h2 { display: inline-block; }
 .project h2 {
   padding: 0;
-  padding-top: 2px;
-}
+  padding-top: 2px; }
 #resume {
   height: 16px;
   width: 70px;
@@ -218,40 +205,16 @@ a {
   padding: 5px;
   margin-top: 5px;
   float: right;
-  clear: right;
-}
+  clear: right; }
 #resume h2 {
   padding: 0;
   position: absolute;
-  bottom: 4px;
-}
-#contact_bar h2 {
-  float: left;
-}
-.fa-stack-2x {
-  color: #e3791c;
-}
-i {
-  color: #202c36;
-}
-.item a {
-  text-decoration: underline;
-}
-
-#left-div, #right-div{
-  max-width: 500px;
-  margin: 10px;
-  display: inline-block;
-  clear: both;
-}
-#left-div{
-  float: left;
-  margin-bottom: 0;
-}
-#right-div{
-}
+  bottom: 4px; }
+#contact_bar h2 { float: left; }
+.fa-stack-2x { color: #e3791c; }
+i { color: #202c36; }
+.item a { text-decoration: underline; }
 #history #resume{
   position: relative;
   bottom: 36px;
-  right: 0;
-}
+  right: 0; }
