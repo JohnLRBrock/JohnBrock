@@ -141,12 +141,23 @@ h2 { font-size: 100%; }
   .skill_point_4{ width: 70%; }
   .skill_point_5{ width: 87.5%; }
 #history {}
-  #odin-list{
-  list-style: circle;
-  margin-left: 20px; }
-a {
-  color: #202c36;
-  text-decoration: none; }
+  #resume {
+  height: 16px;
+  width: 70px;
+  background-color: #e3791c;
+  border: solid 2px #202c36;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 5px;
+  float: right;
+  clear: right;
+  position: relative;
+  bottom: 16px;
+  right: -2px; }
+  #resume h2 {
+    padding: 0;
+    position: absolute;
+    bottom: 4px; }
 
 .project {
   display: block;
@@ -168,25 +179,9 @@ a {
   display: inline-block;
   padding: 0;
   padding-top: 2px; }
-#resume {
-  height: 16px;
-  width: 70px;
-  background-color: #e3791c;
-  border: solid 2px #202c36;
-  border-radius: 10px;
-  padding: 5px;
-  margin-top: 5px;
-  float: right;
-  clear: right; }
-#resume h2 {
-  padding: 0;
-  position: absolute;
-  bottom: 4px; }
+
 #contact_bar h2 { float: left; }
 .fa-stack-2x { color: #e3791c; }
 i { color: #202c36; }
 .item a { text-decoration: underline; }
-#history #resume{
-  position: relative;
-  bottom: 16px;
-  right: -2px; }
+
