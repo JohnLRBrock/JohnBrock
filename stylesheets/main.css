@@ -27,9 +27,11 @@ header{
   width: 100%;
   background-color: #c9d5df;
   padding: 10px 0; }
-h1, h2, h3, h4, h5, h6 { font-weight: bold; }
-.shadow { box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: bold;
+  display: inline; }
 h2 { font-size: 100%; }
+.shadow { box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.05); }
 #masthead {
   height: 50px;
   background-color: #202c36; }
@@ -42,12 +44,17 @@ h2 { font-size: 100%; }
     margin: 10px;
     display: none; }
 
-#intro-bar { height: 170px; }
+#intro-bar { height: 165px; }
   #intro {
     margin: 0 auto;
     display: block;
-    width: 600px;
-    height: 180px; }
+    width: 475px;
+    height: 165px; }
+    @media only screen and (max-width: 1005px) {
+      #intro {
+        margin: 0;
+        margin-left: 1%;}
+    }
     #id-bar {}
       #john_title {
         font-family: 'Raleway', sans-serif;
@@ -59,16 +66,17 @@ h2 { font-size: 100%; }
         width: 100px;
         height: 100px;
         display: inline; }
-    #tag-line {}
+    #tag-line { display: block; }
     #contact_bar {
-      width: 583px;
+      width: 475px;
       display: block;
-      height: 100px; }
-      #contact_bar #social-network-icons{
+      height: 44px;
+      padding-top: 2px; }
+      #social-network-icons{
       float: right;
       display: inline-block;
       height: 40px;
-      width: 300px; }
+      width: 277px; }
       #phone-number{
         padding-left: 0;
         padding-top: 10px; }
@@ -87,32 +95,36 @@ h2 { font-size: 100%; }
 #content-area {
   display: block;
   margin: 0 auto;
-  max-width: 1000px; }
-  #top, #bottom { width: 1000px; }
+  max-width: 1005px; }
+  #top, #bottom { width: 1005px; }
   .border-box {
     margin: 0;
     margin-top: 10px;
     display: inline-block;
-    width: 495px;
+    width: 500px;
     vertical-align: top;
     box-sizing: border-box;}
   .text-box{ 
-    padding: 6px;
-    height: 145px; }
+    padding: 8px;
+    height: 210px; }
 
-@media only screen and (max-width: 1000px) {
-  #shell, #top, #bottom { width: 100%; }
+@media only screen and (max-width: 1005px) {
+  #content-area, #top, #bottom { width: 100%; }
   .border-box { 
-    width: 100%;
-    height: initial; }
+    width: 98%;
+    height: initial;
+    margin: 0 1%;
+    margin-top: 10px;}
 }
-#bio, #projects, .skill_bar, #history{ background-color: #c9d5df; }
-#skills, #bio {
-  border-radius: 5px; }
-#bio, #history { border-radius: 5px; }
+.light-blue, .skill_bar { background-color: #c9d5df; }
 #projects { margin-top: 10px;}
-  .project a p { padding-right: 15px; }
-#skills{ padding: 0 20px; }
+#skills{ padding: 0 30px; }
+  .skill_bar {
+    height: 32px;
+    margin: 5px 0;
+    border-radius: 15px;
+    color: #fcfaf8; }
+  .skill_bar_first{ margin: 0 0 5px 0; }
   .skill-fill {
     width: 40px;
     height: 12px;
@@ -128,20 +140,8 @@ h2 { font-size: 100%; }
   .skill_point_3{ width: 52.5%; }
   .skill_point_4{ width: 70%; }
   .skill_point_5{ width: 87.5%; }
-
-.skill_bar {
-  height: 32px;
-  margin: 5px 0;
-  border-radius: 15px;
-  color: #fcfaf8; }
-.skill_bar_first{
-  margin: 0 0 5px 0; }
-h1, h2 {
-  display: inline; }
-
-#bio h2, #history h2{
-  padding: 0; }
-ul{
+#history {}
+  #odin-list{
   list-style: circle;
   margin-left: 20px; }
 a {
@@ -151,21 +151,21 @@ a {
 .project {
   display: block;
   height: 150px; }
-.project .hover-image {
-  height: 150px;
-  width: 150px;
-  background-size: 150px 150px;
-  float: left;
-  margin-right: 5px; }
-#dogs-pic        { background-image: url("../assets/dog_bw.jpg"); }
-#dogs-pic:hover  { background-image: url("../assets/dog.jpg"); }
-#music-pic       { background-image: url("../assets/speaker_bw.jpg"); }
-#music-pic:hover { background-image: url("../assets/speaker.jpg"); }
-#books-pic       { background-image: url("../assets/books_bw.jpg"); }
-#books-pic:hover { background-image: url("../assets/books.jpg"); }
+  .hover-image {
+    height: 150px;
+    width: 150px;
+    background-size: 150px 150px;
+    float: left;
+    margin-right: 5px; }
+  #dogs-pic        { background-image: url("../assets/dog_bw.jpg"); }
+  #dogs-pic:hover  { background-image: url("../assets/dog.jpg"); }
+  #music-pic       { background-image: url("../assets/speaker_bw.jpg"); }
+  #music-pic:hover { background-image: url("../assets/speaker.jpg"); }
+  #books-pic       { background-image: url("../assets/books_bw.jpg"); }
+  #books-pic:hover { background-image: url("../assets/books.jpg"); }
 
-.project h2 { display: inline-block; }
-.project h2 {
+.project-name {
+  display: inline-block;
   padding: 0;
   padding-top: 2px; }
 #resume {
@@ -188,5 +188,5 @@ i { color: #202c36; }
 .item a { text-decoration: underline; }
 #history #resume{
   position: relative;
-  bottom: 36px;
-  right: 0; }
+  bottom: 16px;
+  right: -2px; }
