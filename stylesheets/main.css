@@ -14,7 +14,7 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 16px;
   font: inherit;
   vertical-align: baseline;}
 
@@ -29,7 +29,7 @@ header{
 h1, h2, h3, h4, h5, h6 { 
   font-weight: bold;
   display: inline; }
-h2 { font-size: 100%; }
+h2 { font-size: 18px; }
 a {
   color: #202c36;
   text-decoration: none; }
@@ -47,13 +47,13 @@ a {
     display: none; }
 
 #intro-bar { 
-  height: 165px;
+  height: 170px;
   background-color: #c9d5df; }
   #intro {
     margin: 0 auto;
     display: block;
     width: 475px;
-    height: 165px;}
+    height: 175px;}
     @media only screen and (max-width: 1005px) {
       #intro {
         margin: 0;
@@ -64,7 +64,7 @@ a {
         font-family: 'Raleway', sans-serif;
         padding: 0 0 0 0;
         margin: 0 0 0 0;
-        font-size: 300%; }
+        font-size: 69px; }
       .circle_image {
         border-radius: 50%;
         width: 100px;
@@ -72,7 +72,7 @@ a {
         display: inline; }
     #tag-line { display: block; }
     #contact_bar {
-      width: 475px;
+      width: 500px;
       display: block;
       height: 44px;
       padding-top: 2px; }
