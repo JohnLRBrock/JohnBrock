@@ -59,7 +59,7 @@ a {
         margin: 0;
         margin-left: 1%;}
     }
-    #id-bar {}
+    #id-bar { width: 480px; }
       #john_title {
         font-family: 'Raleway', sans-serif;
         padding: 0 0 0 0;
@@ -70,7 +70,9 @@ a {
         width: 100px;
         height: 100px;
         display: inline; }
-    #tag-line { display: block; }
+    #tag-line { 
+      display: block;
+      width: 550px; }
     #contact_bar {
       width: 600px;
       display: block;
