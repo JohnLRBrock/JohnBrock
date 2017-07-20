@@ -1,0 +1,68 @@
+Recently I was humbled by the solution to a puzzle on a coding website (codewars.com). The problem is called Consecutive Strings and is as follows:
+
+Description:
+You are given an array strarr of strings and an integer k. Your task is to return the first longest string consisting of k consecutive strings taken in the array.
+Example:
+longest_consec(["zone", "abigail", "theta", "form", "libe", "zas", "theta", "abigail"], 2) --> "abigailtheta"
+n being the length of the string array, if n = 0 or k > n or k <= 0 return "".
+
+It seemed simple enough so I banged out what I thought was a pretty good solution.
+
+def longest_consec(strarr, k)
+  string_count = strarr.length
+
+  return '' if string_count == 0 || k > string_count || k <= 0
+  
+  #create array of first k strings
+  current_string_array = []
+  i = 0
+  while i < k do
+    current_string_array << strarr[i]
+    i += 1
+  end
+  
+  current_len = length_of_strings(current_string_array)
+  max_len = current_len
+  longest_strings = current_string_array.dup
+  
+  while i < string_count
+    # remove first string
+    current_string_array.shift
+    # add new string
+    current_string_array << strarr[i]
+    
+    # compare current strings to previous best
+    current_len = length_of_strings(current_string_array)
+    if current_len > max_len
+      max_len = current_len
+      longest_strings = current_string_array.dup
+    end
+    i += 1
+  end
+  longest_strings.join
+end
+
+def length_of_strings(strarr)
+  len = 0
+  strarr.each { |str| len += str.length }
+  len
+end
+
+The coolest thing about codewars to me is that once you submit a valid solution you get to see solutions of other people starting with the solution that the community thinks is the best.
+
+The problem that took me almost 30 lines to solve could have been solved in two.
+
+def longest_consec(strarr, k)
+  return "" unless k.between?(1, strarr.length)
+  strarr.each_cons(k).map(&:join).max_by(&:length) || ""
+end
+
+or even one
+
+def longest_consec(strarr, k)
+  k > strarr.size || k <= 0 ? '' : strarr.each_cons(k).map(&:join).max_by(&:size)
+end
+
+My code isn't bad. It's not the cleanest, but you can follow it, but it's not the ruby way. My solution is closer to what you would find in a lower level language. I wasn't humbled because my code is bad, but because the other code is so good. It's succinct, it's readable, it approaches poetry. The one line solution is clever, but the two line solution is easier to read as it seperates it's functionality into two parts. A validator to catch bad input and then the solution.
+
+How does someone write code like that?
