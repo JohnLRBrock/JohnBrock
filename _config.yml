@@ -25,7 +25,7 @@ github_username:  Khanthulhu
 # Build settings
 markdown: kramdown
 # theme: "jekyll-swiss"
-plugins:
+plugins_dir:
   - jekyll-feed
 
 # Exclude from processing.
