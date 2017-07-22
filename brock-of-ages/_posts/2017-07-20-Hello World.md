@@ -3,10 +3,14 @@ layout: post
 title: Hello World
 blog: brock-of-ages
 ---
-This is the inaugural post for my blog. I plan to create a diverse set of blogs here and which ones continue will be dependent on what I'm doing at the time and the responses that they get.
+This is the inaugural post for my personal/self improvement blog.
 
-I intend to create blogs covering these topics:
+This blog will cover topics like:
 >
-- Self improvement
-- Golang
-- Ruby on Rails 
+- Using your time more efficiently
+- Book reviews
+- Rationality
+- Philosophy
+- Psychology
+- Applied Behavior Analysis
+- and others
