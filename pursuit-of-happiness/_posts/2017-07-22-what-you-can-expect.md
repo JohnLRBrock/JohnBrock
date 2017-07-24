@@ -1,7 +1,7 @@
 ---
 blog: pursuit-of-happiness
 title: What You Can Expect
-format: post
+layout: post
 ---
 
 This blog is a mix of applied science and life philosophy. Every post will either deal directly with happiness or else on ways to improve quality of life.
