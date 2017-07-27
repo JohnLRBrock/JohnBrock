@@ -3,9 +3,9 @@ blog: john-brock-js
 title: "ELI50: Airbnb JavaScript Style Guide Chapter 1 'Types'"
 layout: post
 ---
-Airbnb, the online marketplace for housing rentals, has an excellent and most reasonable style guide for JavaScript. Some of the topics in the guide are a bit advanced for beginners to the language. This series will act as a plain English guide to the Airbnb style guide, because good design principles shouldn't be out of anyone's reach.
+Airbnb, the online marketplace for housing rentals, has an excellent and most reasonable style guide for JavaScript. Some of the topics in the guide are a bit advanced for beginners to the language. This series will act as a plain English guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
-Each post will cover a chapter of the style guide. We'll start with the rule, explain any terminology it contains, and explain the reasoning behind it when necessary.
+Each post will cover a chapter of the style guide, beginning with the rule, following with an explanation of terminology, then explaining the reasoning behind it when necessary.
 
 ## Types
 <br>
@@ -60,4 +60,4 @@ In the next post I'll explain why you should avoid using `var` to declare variab
 
 
 
-[style guide]: https://github.com/airbnb/javascript#references--prefer-const
+[style guide]: https://github.com/airbnb/javascript#types--primitives
