@@ -12,17 +12,17 @@ Each post will cover a chapter of the style guide, beginning with the style rule
 ### [1.1][1.1] **Primitives**: When you access a primitive type you work directly on its value.
 
 In JavaScript a data type is a way of storing information. A primitive type is the most basic form of this.
-* **string:** Essentially text. Some other languages have a **data type** for individual characters and then another type for 'strings' of characters. JavaScript forgoes this and just has strings.
-* **number:** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has but one to handle all these cases.
-* **boolean:** A boolean can only hold a value of either **True** or **False**. 
-* **null:** Information is stored in a computer's memory. To access the information the computer needs to know where in the **memory** it's located. In computer science a **pointer** is something which 'points' to a place in memory. If a pointer is made but hasn't been 'pointed' anywhere yet it's given **null** as a placeholder value.
-* **undefined:** Undefined is a placeholder value like null. When you **declare** a variable without an initial value it is given a value of **undefined** instead.
+* **`string:`** Essentially text. Some other languages have a **data type** for individual characters and then another type for 'strings' of characters. JavaScript forgoes this and just has strings.
+* **`number:`** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has but one to handle all these cases.
+* **`boolean:`** A boolean can only hold a value of either **True** or **False**. 
+* **`null:`** Information is stored in a computer's memory. To access the information the computer needs to know where in the **memory** it's located. In computer science a **pointer** is something which 'points' to a place in memory. If a pointer is made but hasn't been 'pointed' anywhere yet it's given **null** as a placeholder value.
+* **`undefined:`** Undefined is a placeholder value like null. When you **declare** a variable without an initial value it is given a value of **undefined** instead.
 
 ### [1.2][1.2] **Complex**: When you access a complex type you work on a reference to its value.
 
-* **object:** An object is a data type that contains information and **methods** for accessing that information.
-* **array:** An array is a numbered list. In JavaScript, as well as most other languages, arrays are 0 **indexed** meaning that the first object in an array has the number 0 instead of the number 1. 
-* **function:** A function is a way of storing instructions for the computer.
+* **`object:`** An object is a data type that contains information and **methods** for accessing that information.
+* **`array:`** An array is a numbered list. In JavaScript, as well as most other languages, arrays are 0 **indexed** meaning that the first object in an array has the number 0 instead of the number 1. 
+* **`function:`** A function is a way of storing instructions for the computer.
 
 <br>
 ### Why Should I Care?
