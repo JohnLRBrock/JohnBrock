@@ -3,7 +3,7 @@ blog: john-brock-js
 title: "ELI50: Airbnb JavaScript Style Guide Chapter 1: Types"
 layout: post
 ---
-[Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners to the language. This 'Explain Like I'm 50' (ELI50) series will act as a plain English guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+[Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
 Each post will cover a chapter of the style guide, beginning with the style rule, followed by an explanation of terminology, and finally why the rule is important.
 
