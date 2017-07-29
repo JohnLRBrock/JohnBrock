@@ -57,7 +57,7 @@ This is an important concept to grasp because it's often the cause of **strange 
 <br>
 ### Next Up: References
 
-In the next post I'll explain why you should avoid using `var` to declare variables.
+Next Saturday I'll explain why you should avoid using `var` to declare variables.
 
 
 
