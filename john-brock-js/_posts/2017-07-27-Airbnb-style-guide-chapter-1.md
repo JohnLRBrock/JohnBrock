@@ -14,9 +14,13 @@ Each post will cover a chapter of the style guide, beginning with the style rule
 In JavaScript a data type is a way of storing information. A primitive type is the most basic form of this.
 * **`string:`** Essentially text. Some other languages have a **data type** for individual characters and then another type for **strings** of characters. JavaScript forgoes this and just has strings.
 * **`number:`** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has but one to handle all these cases.
-* **`boolean:`** A boolean can only hold a value of either **True** or **False**. 
-* **`null:`** Information is stored in a computer's memory. To access the information the computer needs to know where in the **memory** it's located. In computer science a **pointer** is something which points to a place in memory. If a pointer is made but hasn't been pointed anywhere yet it's given the value **null** as a placeholder.
-* **`undefined:`** Undefined is a placeholder value like null. When you **declare** a variable without an initial value it is given a value of **undefined** instead.
+* **`boolean:`** A boolean can only hold a value of either **True** or **False**.
+* **`undefined:`** When you **declare** a variable without an initial value it is given a value of **undefined** as a placeholder.
+* **`null:`** When you declare a **pointer** without pointing it anywhere it's given the value **null** as a placeholder.
+
+> # What the heck is a pointer?
+Think of a pointer like a house address. Instead of building an all new house, which can be expensive, I give you the address to the original. Now if you want to use the kitchen, read the books in the study, or use other functions of the house you can. However, if someone makes a change, then everyone who has that address will see them. If we make a copy of the house instead (with a different address) we could change one without the other being affected.
+
 
 ### [1.2][1.2] **Complex**: When you access a complex type you work on a reference to its value.
 
@@ -37,7 +41,7 @@ bar = 9;
 console.log(foo, bar); // => 1, 9
 ```
 
-On the other hand if the first variable was an **array** and I set my second variable equal to the first, JavaScript doesn't make a copy of the array. Instead it uses a **pointer** as we discussed earlier to point to the place in **memory** that the array exists in. Now if I change the value in one of the variables, since they are both looking at the same place in memory, they both will have their values changed.
+On the other hand if the first variable was an **array**, a complex type, and I set my second variable equal to the first, JavaScript doesn't make a copy of the array. Instead it uses a **pointer** as we discussed earlier to point to the place in **memory** that the array exists in. Now if I change the value in one of the variables, since they are both looking at the same place in memory, they both will have their values changed.
 
 ```javascript
 const foo = [1, 2];
