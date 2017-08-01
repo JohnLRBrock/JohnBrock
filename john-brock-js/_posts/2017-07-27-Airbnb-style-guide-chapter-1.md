@@ -13,7 +13,7 @@ Each post will cover a chapter of the style guide, beginning with the style rule
 
 In JavaScript a data type is a way of storing information. A primitive type is the most basic form of this.
 * **`string:`** Essentially text. Some other languages have a **data type** for individual characters and then another type for **strings** of characters. JavaScript forgoes this and just has strings.
-* **`number:`** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has but one to handle all these cases.
+* **`number:`** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has only one type of number, the 64 bit floating point number. To learn more about it read this [w3schools][js numbers] guide on JavaScript Numbers.
 * **`boolean:`** A boolean can only hold a value of either **True** or **False**.
 * **`undefined:`** When you **declare** a variable without an initial value it is given a value of **undefined** as a placeholder.
 * **`null:`** When you declare a **pointer** without pointing it anywhere it's given the value **null** as a placeholder.
@@ -72,3 +72,4 @@ Next Saturday I'll explain why you should avoid using `var` to declare variables
 [airbnb]: https://www.airbnb.com/
 [1.1]: https://github.com/airbnb/javascript#types--primitives
 [1.2]: https://github.com/airbnb/javascript#types--complex
+[js numbers]: https://www.w3schools.com/js/js_numbers.asp
