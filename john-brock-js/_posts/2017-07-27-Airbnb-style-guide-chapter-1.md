@@ -23,14 +23,21 @@ Think of a pointer like a house address. Instead of building an all new house, w
 
 
 ### [1.2][1.2] **Complex**: When you access a complex type you work on a reference to its value.
+># What the heck is a reference?
+When you work with any of the following types you are working with reference to their values. This is often indistinguishable from working with their values directly but trouble can arises when you try to make a copies. Remember the house analogy from earlier? If you try to make a copy like this:
+```javascript
+let copyHouse = myHouse;
+```
+you aren't creating a whole new house like you might expect. Instead you are just giving the 'address' from before another name. Now, if you try to add a room to `copyHouse` it will be in `myHouse` too because they're the same house.
 
-* **`object:`** An object is a data type that contains information and **methods** for accessing that information.
+
+* **`object:`** An object is a data type that contains information and **methods** for accessing that information. 
 * **`array:`** An array is a numbered list. In JavaScript, as well as most other languages, arrays are 0 **indexed** meaning that the first object in an array has the number 0 instead of the number 1. 
 * **`function:`** A function is a way of storing instructions for the computer.
 
 <br>
 ### Why Should I Care?
-Say I have two variables and I set one equal to the other. If they are both **primitives** and I later change one of them then the other doesn't change. The two variables aren't linked in any way.
+It's important to have a clear understanding how you access values with primitive and complex types. Say I have two variables and I set one equal to the other. If they are both **primitives** and I later change one of them then the other doesn't change. The two variables aren't linked in any way.
 
 ```javascript
 const foo = 1;
