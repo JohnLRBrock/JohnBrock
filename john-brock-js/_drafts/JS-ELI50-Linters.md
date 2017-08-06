@@ -1,1 +1,0 @@
-# What Are Javascript Linters and Why Should You Love Them?
