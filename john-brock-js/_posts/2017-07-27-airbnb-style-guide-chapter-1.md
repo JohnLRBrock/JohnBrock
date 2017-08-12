@@ -6,7 +6,7 @@ permalink: "/john-brock-js/airbnb-styleguide-chapter-1"
 ---
 [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
-Each post will cover a chapter of the style guide, beginning with the style rules, followed by an explanation of terminology, and finally why the rule is important.
+Each post will cover a chapter of the style guide, beginning with the style rules, followed by an explanation of terminology, and finally why the rules are important.
 
 <br>
 ## Chapter 1: Types
@@ -16,8 +16,8 @@ In JavaScript a data type is a way of storing information. A primitive type is t
 * **`string:`** Essentially text. Some other languages have a **data type** for individual characters and then another type for **strings** of characters. JavaScript forgoes this and just has strings.
 * **`number:`** Many other languages have different data types for numbers to handle integers, large numbers, or numbers with decimals. JavaScript has only one type of number, the 64 bit floating point number. To learn more about it read this [w3schools][js numbers] guide on JavaScript Numbers.
 * **`boolean:`** A boolean can only hold a value of either **True** or **False**.
-* **`undefined:`** When you **declare** a variable without an initial value it is given a value of **undefined** as a placeholder.
-* **`null:`** When you declare a **pointer** without pointing it anywhere it's given the value **null** as a placeholder.
+* **`undefined:`** When you **declare** a variable without an initial value it is given a temporary placeholder value of **undefined**.
+* **`null:`** When you declare a **pointer** without pointing it anywhere it's given the value **null** as a temporary placeholder.
 
 > # What the heck is a pointer?
 Think of a pointer like a house address. Instead of building an all new house, which can be expensive, I give you the address to the original. Now if you want to use the kitchen, read the books in the study, or use other functions of the house you can. However, if someone makes a change, then everyone who has that address will see them. If we make a copy of the house instead (with a different address) we could change one without the other being affected.
@@ -38,7 +38,7 @@ you aren't creating a whole new house like you might expect. Instead you are jus
 
 <br>
 ### Why Should I Care?
-It's important to have a clear understanding how you access values with primitive and complex types. Say I have two variables and I set one equal to the other. If they are both **primitives** and I later change one of them then the other doesn't change. The two variables aren't linked in any way.
+It's important to have a clear understanding of how you access values with primitive and complex types. Say I have two variables and I set one equal to the other. If they are both **primitives** and I later change one of them then the other doesn't change. The two variables aren't linked in any way.
 
 ```javascript
 const foo = 1;
