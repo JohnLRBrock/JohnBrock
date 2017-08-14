@@ -194,6 +194,9 @@ const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
 ### Why Should I Care?
 All JavaScript values except primitives are objects. You'll be working with objects all throughout your JavaScript career and it's important to know how to work with them. To learn more about JavaScript objects read this guide from [w3schools][W3S Objects Guide]
 
+<br>
+### Next Up: Arrays
+Next Saturday I'll explain what Arrays are and how to use them.
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
