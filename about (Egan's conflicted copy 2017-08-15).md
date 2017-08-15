@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<img src="/assets/mountain-john-square.jpg" alt="John Brock" title="John Brock Headshot" class="portrait">
+<img src="/assets/mountain-john.jpg" alt="John Brock" title="John Brock Headshot">
 
 ### Who I am:
 I have a BA in psychology which means I can do whatever I want as long as it's not psychology. I've always loved puzzles. When I find a good one I drop everything until it's solved; that's why people don't trust me with babies anymore. I get excited for new experiences, enjoy exploration, and constantly seek self improvement. I'm curious, eager to learn, and always put my absolute best work into anything I do.
