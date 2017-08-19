@@ -5,7 +5,7 @@ layout: post
 permalink: "/john-brock-js/airbnb-styleguide-chapter-4"
 ---
 
-The fourth chapter of the style guide covers arrays and are handy for containing collections of ordered data.
+The topic of the fourth chapter of the style guide is **arrays** which are handy objects for containing collections of ordered data. To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
 
 ## Chapter 4: Arrays
 ### [4.1][4.1]: Use the literal syntax for array creation. eslint: [no-array-constructor][no-array-constructor]
@@ -44,12 +44,59 @@ for (i = 0; i < len; i += 1) {
 const itemsCopy = [...items];
 ```
 ### [4.4][4.4]: To convert an array-like object to an array, use [`Array.from`][array from].
+Once again, the preferred method is more expressive and easier to write.
 ```javascript
 const foo = document.querySelectorAll('.foo');
 const nodes = Array.from(foo);
 ```
 ### [4.5][4.5]: Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2][8.2]. eslint: [array-callback-return][array-callback-return]
 There are certain methods that execute a block of code on each item in an array (Ex. reduce, map, filter, etc.). That block of code is referred to as a callback. If the callback is more than one line long, use a return statement. Otherwise skip it.
+```javascript
+// good
+[1, 2, 3].map((x) => {
+  const y = x + 1;
+  return x * y;
+});
+
+// good
+[1, 2, 3].map(x => x + 1);
+
+// bad
+const flat = {};
+[[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
+  const flatten = memo.concat(item);
+  flat[index] = flatten;
+});
+
+// good
+const flat = {};
+[[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
+  const flatten = memo.concat(item);
+  flat[index] = flatten;
+  return flatten;
+});
+
+// bad
+inbox.filter((msg) => {
+  const { subject, author } = msg;
+  if (subject === 'Mockingbird') {
+    return author === 'Harper Lee';
+  } else {
+    return false;
+  }
+});
+
+// good
+inbox.filter((msg) => {
+  const { subject, author } = msg;
+  if (subject === 'Mockingbird') {
+    return author === 'Harper Lee';
+  }
+
+  return false;
+});
+```
+
 ### [4.6][4.6]: Use line breaks after open and before close array brackets if an array has multiple lines
 This simply makes the array more readable.
 ```javascript
@@ -85,12 +132,20 @@ const numberInArray = [
   2,
 ];
 ```
+
+<br>
+###Why Should I Care?
+Arrays are one of the simplest, most intuitive, and most useful tools used by JavaScript programmers to create **data structures**. They are an essential tool for every programmer and if you're going to do work in JavaScript you need to know how to make and work with them.
+
 <br>
 ### Next up: Destructuring
 Next Saturday I'll explain what destructuring is and why it's useful.
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
+
+[array basics]: https://www.w3schools.com/js/js_arrays.asp
+[array documentation]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 [spread operator documentation]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_operator
 [array from]: https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/from
 
