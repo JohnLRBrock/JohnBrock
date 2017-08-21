@@ -134,7 +134,7 @@ const numberInArray = [
 ```
 
 <br>
-###Why Should I Care?
+### Why Should I Care?
 Arrays are one of the simplest, most intuitive, and most useful tools used by JavaScript programmers to create **data structures**. They are an essential tool for every programmer and if you're going to do work in JavaScript you need to know how to make and work with them.
 
 <br>
