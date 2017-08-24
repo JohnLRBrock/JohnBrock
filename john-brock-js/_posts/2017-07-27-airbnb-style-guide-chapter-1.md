@@ -18,6 +18,7 @@ In JavaScript a data type is a way of storing information. A primitive type is t
 * **`boolean:`** A boolean can only hold a value of either **True** or **False**.
 * **`undefined:`** When you **declare** a variable without an initial value it is given a temporary placeholder value of **undefined**.
 * **`null:`** When you declare a **pointer** without pointing it anywhere it's given the value **null** as a temporary placeholder.
+* **`symbol:`** A new primitive that was added in the latest release of JavaScript (ES6) which you can read more about from this [Keith Cirkel article][symbols].
 
 > # What the heck is a pointer?
 Think of a pointer like a house address. Instead of building an all new house, which can be expensive, I give you the address to the original. Now if you want to use the kitchen, read the books in the study, or use other functions of the house you can. However, if someone makes a change, then everyone who has that address will see them. If we make a copy of the house instead (with a different address) we could change one without the other being affected.
@@ -74,3 +75,4 @@ Next Saturday I'll explain why you should avoid using `var` to declare variables
 [1.1]: https://github.com/airbnb/javascript#types--primitives
 [1.2]: https://github.com/airbnb/javascript#types--complex
 [js numbers]: https://www.w3schools.com/js/js_numbers.asp
+[symbols]: https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/
