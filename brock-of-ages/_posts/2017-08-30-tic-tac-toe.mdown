@@ -9,3 +9,5 @@ Just finished putting the final touches on my tic tac toe project.
 I took this project as an opportunity to learn about CSS Grid. My verdict is that while it is really cool, it can be difficult or unintuitive to use with content that is non responsive. For this project I used three 3X3 grids nested inside of a larger grid. The grids had to be centered in the window and while it would have 'just worked' if the content had been dynamic, since I was using statically sized grid cells so that the X's would fit on my tic-tac-toe board I had to make sure that the whole grid fit inside of the grid. If it was smaller or larger it wouldn't center properly.
 
 Grid is a powerful solution but for some implantations there's a larger than expected learning curve.
+
+All in all, I'm really proud of how this project turned out. The layout looks great at all reasonable resolutions, color scheme is bright and pleasant, and the animations make everything feel just a little bit better.
