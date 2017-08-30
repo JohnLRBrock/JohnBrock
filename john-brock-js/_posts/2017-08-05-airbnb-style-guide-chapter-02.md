@@ -1,7 +1,7 @@
 ---
+layout: post
 blog: john-brock-js
 title: "ELI50: Airbnb JavaScript Style Guide Chapter 2: References"
-layout: post
 permalink: "/john-brock-js/airbnb-styleguide-chapter-2"
 ---
 
