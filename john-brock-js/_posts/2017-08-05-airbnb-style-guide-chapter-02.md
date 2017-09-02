@@ -9,20 +9,18 @@ Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide]
 
 <br>
 ## Chapter 2: References
-### [2.1][2.1]: Use const for all of your references; avoid using var. eslint: [`prefer-const`][prefer-const], [`no-const-assign`][no-const-assign]
+### [2.1][2.1]: Use const for all of your references; avoid using var.
 There are three **reserved words** you can use to create variables with JavaScript. They are `var`, `const`, and `let`. When you are defining a variable that won't change, like Pi, use `const` which stands for constant.
 ```javascript
 const pi = 3.1415926535;
 ```
+
 This practice helps prevent bugs and makes your intent clearer, increasing readability.
 > # What the heck is a reserved word?
 Reserved words are the words of power that make up JavaScript like `if`, `new`, and `for`. These words have fixed meanings and aren't allowed to be redefined by the programmer (which means you can't make a variable called 'if', for instance.) The three reserved words we're talking about in this post are `let`, `const`, and `var`.
 
-### [2.2][2.2]: If you must reassign references, use let instead of var. eslint: [`no-var`][no-var] jscs: [`disallowVar`][disallowVar]
+### [2.2][2.2]: If you must reassign references, use let instead of var.
 Using `const` for variables that won't change makes sense, but why use `let` over `var`? At the risk of oversimplifying, `let` can do almost everything that `var` can, while also avoiding unintentional bizarre behavior as described in this article from [Vegibit][let vs var vs const vegibit].
-
-> # What the heck is ESLint and JSCS?
-They are two popular **linting programs**, which check your for errors, style mistakes, and bad practices in your code. I go deeper into them in a soon to be released john-brock.js post but suffice it to say that if you're doing anything more than trivial programming you should be using a linter. For JavaScript I would recommend [ESLint][eslint].
 
 ### [2.3][2.3]: Note that both let and const are block-scoped.
 
@@ -55,12 +53,9 @@ Next Saturday I'll explain what objects are, how you should be making them, and 
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
+
 [2.1]: htps://github.com/airbnb/javascript#references--prefer-const
 [2.2]: htps://github.com/airbnb/javascript#references--disallow-var
 [2.3]: htps://github.com/airbnb/javascript#references--block-scope
-[prefer-const]: http://eslint.org/docs/rules/prefer-const.html
-[no-const-assign]: http://eslint.org/docs/rules/no-const-assign.html
-[no-var]: http://eslint.org/docs/rules/no-var.html
-[disallowVar]: http://jscs.info/rule/disallowVar
+
 [let vs var vs const vegibit]: http://vegibit.com/es6-let-vs-var-vs-const/
-[eslint]: http://eslint.org/

@@ -27,135 +27,27 @@ Although the first method isn't harmful, it takes longer to write and can cause 
 
 ### [3.2][3.2]: Use computed property names when creating objects with dynamic property names.
 
-JavaScript has a nifty feature that allows you to add or create properties for objects without knowing what the name of the property will be until the program is ran. This is helpful, for instance, when you want to create objects from data because you can create the names problematically instead of having to input them by hand. It's best to add the property name when you make the object so that you can keep all the properties in the same place.
+JavaScript has a nifty feature that allows you to add or create properties for objects without knowing what the name of the property will be until the program is executed. This is helpful, for instance, when you want to create objects from data because you can create the names problematically instead of having to input them by hand. It's best to add the property name when you make the object so that you can keep all the properties in the same place.
 
-```javascript
-function getKey(k) {
-  return `a key named ${k}`;
-}
-
-// bad
-const obj = {
-  id: 5,
-  name: 'San Francisco',
-};
-obj[getKey('enabled')] = true;
-
-// good
-const obj = {
-  id: 5,
-  name: 'San Francisco',
-  [getKey('enabled')]: true,
-};
-```
-
-### [3.3][3.3]: Use object method shorthand. eslint: [`object-shorthand`][object-shorthand] jscs: [`requireEnhancedObjectLiterals`][requireEnhancedObjectLiterals]
+### [3.3][3.3]: Use object method shorthand.
 
 Functions that belong to objects are called **methods**. These methods can be called on the object like `object.foo()`. This form of declaring functions is less verbose and easier to read.
-```javascript
-// bad
-const atom = {
-  value: 1,
 
-  addValue: function (value) {
-    return atom.value + value;
-  },
-};
-
-// good
-const atom = {
-  value: 1,
-
-  addValue(value) {
-    return atom.value + value;
-  },
-};
-```
-
-### [3.4][3.4]: Use property value shorthand. eslint: [`object-shorthand`][object-shorthand] jscs: [`requireEnhancedObjectLiterals`][requireEnhancedObjectLiterals]
+### [3.4][3.4]: Use property value shorthand.
 
 If the name of the property shares the name with the variable you're setting it to you can use property value shorthand which saves time and is more expressive.
 
-```javascript
-const lukeSkywalker = 'Luke Skywalker';
-
-// bad
-const obj = {
-  lukeSkywalker: lukeSkywalker,
-};
-
-// good
-const obj = {
-  lukeSkywalker,
-};
-```
-
 ### [3.5][3.5]: Group your shorthand properties at the beginning of your object declaration.
 
-This makes things clearer when you are assigning a large number of properties.
+This is an example of code organization which makes the code clearer.
 
-```javascript
-const anakinSkywalker = 'Anakin Skywalker';
-const lukeSkywalker = 'Luke Skywalker';
-
-// bad
-const obj = {
-  episodeOne: 1,
-  twoJediWalkIntoACantina: 2,
-  lukeSkywalker,
-  episodeThree: 3,
-  mayTheFourth: 4,
-  anakinSkywalker,
-};
-
-// good
-const obj = {
-  lukeSkywalker,
-  anakinSkywalker,
-  episodeOne: 1,
-  twoJediWalkIntoACantina: 2,
-  episodeThree: 3,
-  mayTheFourth: 4,
-};
-```
-
-### [3.6][3.6]: Only quote properties that are invalid identifiers. eslint: [`quote-props`][quote-props] jscs: [`disallowQuotedKeysInObjects`][disallowQuotedKeysInObjects]
+### [3.6][3.6]: Only quote properties that are invalid identifiers.
 
 Some property names can be used but only when quoted. `'foo-bar'` would work but `foo-bar` (not quoted) will not. You could quote every name, for safety, but it's more verbose and it will probably rare where your property name will need the quotes.
-```javascript
-// bad
-const bad = {
-  'foo': 3,
-  'bar': 4,
-  'data-blah': 5,
-};
-
-// good
-const good = {
-  foo: 3,
-  bar: 4,
-  'data-blah': 5,
-};
-```
 
 ### [3.7][3.7]: Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`.
 
 There are some cases when calling `Object.prototype` methods directly (like `console.log(object.hasOwnProperty(key));`) can have unintended behavior, for instance if the object was null or if the method was **shadowed** by a property on the object.
-
-```javascript
-// bad
-console.log(object.hasOwnProperty(key));
-
-// good
-console.log(Object.prototype.hasOwnProperty.call(object, key));
-
-// best
-const has = Object.prototype.hasOwnProperty; // cache the lookup once, in module scope.
-/* or */
-import has from 'has';
-// ...
-console.log(has.call(object, key));
-```
 
 > # What the heck is shadowing?
 Shadowing is a concept related to scope. If you define a global variable and then a define a new variable in a more local scope, like in a function, then when you call the variable the local variable will be the one that gets used. In this instance it could look like this:
@@ -168,31 +60,9 @@ myObject.hasOwnProperty(magic)                        #=> false
 Object.prototype.hasOwnProperty.call(myObject, magic) #=> true
 ```
 
-
-### [3.8][3.8]: Prefer the object spread operator over `Object.assign` to **shallow-copy** objects. Use the object rest operator to get a new object with certain properties omitted.
-
-The spread operator is less verbose than `Object.assign`.
-
-```javascript
-// very bad
-const original = { a: 1, b: 2 };
-const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
-delete copy.a; // so does this
-
-// bad
-const original = { a: 1, b: 2 };
-const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
-
-// good
-const original = { a: 1, b: 2 };
-const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
-
-const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
-```
-
 <br>
 ### Why Should I Care?
-All JavaScript values except primitives are objects. You'll be working with objects all throughout your JavaScript career and it's important to know how to work with them. To learn more about JavaScript objects read this guide from [w3schools][W3S Objects Guide]
+All JavaScript values except primitives are objects. You'll be working with objects all throughout your JavaScript career and it's important to know how to work with them. To learn more about JavaScript objects read this guide from [w3schools][W3S Objects Guide].
 
 <br>
 ### Next Up: Arrays
@@ -200,6 +70,7 @@ Next Saturday I'll explain what Arrays are and how to use them.
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
+
 [3.1]: https://github.com/airbnb/javascript#objects--no-new
 [3.2]: https://github.com/airbnb/javascript#es6-computed-properties
 [3.3]: https://github.com/airbnb/javascript#es6-object-shorthand
@@ -207,12 +78,7 @@ Next Saturday I'll explain what Arrays are and how to use them.
 [3.5]: https://github.com/airbnb/javascript#objects--grouped-shorthand
 [3.6]: https://github.com/airbnb/javascript#objects--quoted-props
 [3.7]: https://github.com/airbnb/javascript#objects--prototype-builtins
-[3.8]: https://github.com/airbnb/javascript#objects--rest-spread
-[object-shorthand]: http://eslint.org/docs/rules/object-shorthand.html
-[requireEnhancedObjectLiterals]: http://jscs.info/rule/requireEnhancedObjectLiterals
-[no-new-object]: http://eslint.org/docs/rules/no-new-object.html
-[quote-props]: http://eslint.org/docs/rules/quote-props.html
-[disallowQuotedKeysInObjects]: http://jscs.info/rule/disallowQuotedKeysInObjects
+
 [DRY]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [SO object literal]: https://stackoverflow.com/questions/383402/is-javascripts-new-keyword-considered-harmful
 [W3S Objects Guide]: https://www.w3schools.com/js/js_object_definition.asp

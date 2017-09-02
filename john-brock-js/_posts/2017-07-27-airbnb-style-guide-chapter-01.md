@@ -4,9 +4,12 @@ blog: john-brock-js
 title: "ELI50: Airbnb JavaScript Style Guide Chapter 1: Types"
 permalink: "/john-brock-js/airbnb-styleguide-chapter-1"
 ---
-[Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+[Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
-Each post will cover a chapter of the style guide, beginning with the style rules, followed by an explanation of terminology, and finally why the rules are important.
+Each post will cover a chapter of the style guide and will explain terminology, techniques and the reason behind the rules.
+
+> # What the heck is ESLint and JSCS?
+Periodically in the guide you'll see links labeled with either ESLint and JSCS. These are two popular **linting programs**, which check your for errors, style mistakes, and bad practices in your code. I go deeper into them in a soon to be released john-brock.js post but suffice it to say that if you're doing anything more than trivial programming you should be using a linter. For JavaScript I would recommend [ESLint][eslint].
 
 <br>
 ## Chapter 1: Types
@@ -41,25 +44,7 @@ you aren't creating a whole new house like you might expect. Instead you are jus
 ### Why Should I Care?
 It's important to have a clear understanding of how you access values with primitive and complex types. Say I have two variables and I set one equal to the other. If they are both **primitives** and I later change one of them then the other doesn't change. The two variables aren't linked in any way.
 
-```javascript
-const foo = 1;
-let bar = foo;
-
-bar = 9;
-
-console.log(foo, bar); // => 1, 9
-```
-
 On the other hand if the first variable was an **array**, a complex type, and I set my second variable equal to the first, JavaScript doesn't make a copy of the array. Instead it uses a **pointer** as we discussed earlier to point to the place in **memory** that the array exists in. Now if I change the value in one of the variables, since they are both looking at the same place in memory, they both will have their values changed.
-
-```javascript
-const foo = [1, 2];
-const bar = foo;
-
-bar[0] = 9;
-
-console.log(foo[0], bar[0]); // => 9, 9
-```
 
 This is an important concept to grasp because it's often the cause of **strange behavior** in complex programs.
 
@@ -72,7 +57,10 @@ Next Saturday I'll explain why you should avoid using `var` to declare variables
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
+[eslint]: http://eslint.org/
+
 [1.1]: https://github.com/airbnb/javascript#types--primitives
 [1.2]: https://github.com/airbnb/javascript#types--complex
+
 [js numbers]: https://www.w3schools.com/js/js_numbers.asp
 [symbols]: https://www.keithcirkel.co.uk/metaprogramming-in-es6-symbols/

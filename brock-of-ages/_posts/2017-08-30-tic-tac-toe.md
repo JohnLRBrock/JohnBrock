@@ -1,7 +1,7 @@
 ---
 layout: post
 blog: brock-of-ages
-title: Three Board loser wins Tic-Tac-Toe Using CSS Grid
+title: Three Board, loser wins, Tic-Tac-Toe Using CSS Grid
 ---
 I've finished my three board [tic tac toe project](https://khanthulhu.github.io/tic-tac-toe/). The project is made using Javascript, JQuery, HTML, and Sass.
 
