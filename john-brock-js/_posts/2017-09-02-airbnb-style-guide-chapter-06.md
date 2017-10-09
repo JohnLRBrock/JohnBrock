@@ -53,4 +53,4 @@ If you enjoyed this post, or especially if you didn't enjoy it, leave me a post 
 [sublime text]: https://www.sublimetext.com/
 [caniuse templates]: https://caniuse.com/#feat=template-literals
 [eval()]: https://javascriptweblog.wordpress.com/2010/04/19/how-evil-is-eval/
-[escape character]: https://en.wikipedia.org/wiki/Escape_character
+[escape characters]: https://en.wikipedia.org/wiki/Escape_character
