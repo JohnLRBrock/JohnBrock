@@ -3,6 +3,7 @@ layout: post
 blog: john-brock-js
 title: "ELI50: Airbnb JavaScript Style Guide Chapter 1: Types"
 permalink: "/john-brock-js/airbnb-styleguide-chapter-1"
+comments: true
 ---
 [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
@@ -52,6 +53,8 @@ This is an important concept to grasp because it's often the cause of **strange 
 ### Next Up: References
 
 Next Saturday I'll explain why you should avoid using `var` to declare variables.
+
+If you enjoyed this post, have a criticism or just want to say hi, leave a post in the comments section.
 
 
 
