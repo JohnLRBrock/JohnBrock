@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://JohnBrock.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Khanthulhu
 github_username:  Khanthulhu
-site.disqus.shortname: john-brock
+disqus.shortname: john-brock
 
 # Build settings
 markdown: kramdown
