@@ -39,6 +39,8 @@ Escape characters allow you do things like have single quotes in strings that ar
 ### Next up: Functions
 Next Saturday I'll cover the rules related to functions.
 
+If you enjoyed this post, or especially if you didn't enjoy it, leave me a post in the comments telling me why.
+
 [airbnb]: https://www.airbnb.com/
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 
