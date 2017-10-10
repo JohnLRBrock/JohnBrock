@@ -15,15 +15,7 @@ Simply put an object is a way to **encapsulate** something in a way that can be 
 ## Chapter 3: Objects
 ### [3.1][3.1]: Use the literal syntax for object creation. eslint: [`no-new-object`][no-new-object]
 
-```javascript
-// more error prone and verbose
-const item = new Object();
-
-// harder to mess up and easier to write 
-const item = {};
-```
-
-Although the first method isn't harmful, it takes longer to write and can cause problems for you if you forget `new`. The second method is faster to write, easier to read, and harder to mess up. If you want to learn more about the why we tend to use the second version read the answers on this [stack overflow question.][SO object literal]
+Although the new object syntax, `const myObj = new Object;`, isn't harmful it takes longer to write and can cause problems for you if you forget the `new`. Object literal syntax, `const myObj = {};`, is faster to write, easier to read, and harder to mess up. If you want to learn more about the why we tend to use the second version read the answers on this [stack overflow question.][SO object literal]
 
 ### [3.2][3.2]: Use computed property names when creating objects with dynamic property names.
 
@@ -67,6 +59,8 @@ All JavaScript values except primitives are objects. You'll be working with obje
 <br>
 ### Next Up: Arrays
 Next Saturday I'll explain what Arrays are and how to use them.
+
+If you did or didn't like this article, let me know how you feel in the comments below.
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/

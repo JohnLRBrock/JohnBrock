@@ -50,6 +50,8 @@ The changes recommended in this section are easy to implement, especially with t
 ### Next Up: Objects
 Next Saturday I'll explain what objects are, how you should be making them, and how you should be working with them.
 
+If you learned something from this post, have some constructive criticism or just want to say hi, leave a comment below.
+
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
