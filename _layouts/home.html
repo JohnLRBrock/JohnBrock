@@ -1,34 +1,51 @@
 ---
 layout: default
 ---
-<div class="home">
-  <div class="book-title-page">
-    <h1 class="book-title centered">The Developer's Guide to the Galaxy</h1>
-    <h2 class="book-subtitle centered">Keep Banging Rocks Together</h2>
-    <h2 class="author-name centered">John Brock</h2>
-  </div>
+
+<div class="book-title-page">
+  <h1 class="book-title">The Developer's Guide to the Galaxy</h1>
+  <h2 class="book-subtitle">Keep Banging Rocks Together</h2>
+  <h2 class="author-name">John Brock</h2>
 </div>
 
-<ul class="post-list">
-  <h2 class="content-chapter-label"><a href="#">Foreward</a></h2>
-  <h2 class="content-chapter-label"><a href="#">About the Author</a></h2>
-  <h2 class="content-chapter-label"><a href="#">Projects</a></h2>
-  {% for blog in site.blogs %}
-  <h2 class="content-chapter-label">{{ blog }}</h2>
-    {% for post in site.posts %}
-      <li>
-        {% if blog == post.blog %}
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+<h1 class="centered">Contents</h1>
 
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h2>
-        {% endif %}
+<ul class="contents">
+  <li class="contents-label">
+    <a href="#" title="Foreword">Foreword</a>
+  </li>
+  <li class="contents-label">
+    <a href="#" title="About the Author">About the Author</a>
+  </li>
+  <li class="contents-label">
+    <a href="#" title="projects">Projects</a>
+  </li>
+  {% for blog in site.blogs %}
+    {% if blog == "john-brock-js" %}
+      <li class="contents-label">
+        <a href="#" title="john-brock.js">Chapter 1: john-brock.js</a>
       </li>
+    {% elsif blog == "brock-of-ages" %}
+      <li class="contents-label">
+        <a href="#" title="john-brock.js">Chapter 2: Brock of Ages</a>
+      </li>
+    {% endif %}
+    {% for post in site.posts %}
+      {% if blog == post.blog %}
+        <li class="contents-item">
+          <a class="contents-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+
+          <div class="date-container">
+            {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
+            <span class="contents-date">{{ post.date | date: date_format }}</span>
+          </div>
+        </li>
+      {% endif %}
     {% endfor %}
   {% endfor %}
-  <h2 class="content-chapter-label"><a href="#">Index</a></h2>
+  <li contents-label>
+    <a href="#">Index</a>
+  </li>
 </ul>
 
 
