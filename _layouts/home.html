@@ -1,17 +1,23 @@
 ---
 layout: default
 ---
-
 <div class="home">
+  <div class="book-title-page">
+    <h1 class="book-title centered">The Developer's Guide to the Galaxy</h1>
+    <h2 class="book-subtitle centered">Keep Banging Rocks Together</h2>
+    <h2 class="author-name centered">John Brock</h2>
+  </div>
+</div>
 
-  <h1 class="page-heading">Posts</h1>
-  
-  {{ content }}
-
-  <ul class="post-list">
+<ul class="post-list">
+  <h2 class="content-chapter-label"><a href="#">Foreward</a></h2>
+  <h2 class="content-chapter-label"><a href="#">About the Author</a></h2>
+  <h2 class="content-chapter-label"><a href="#">Projects</a></h2>
+  {% for blog in site.blogs %}
+  <h2 class="content-chapter-label">{{ blog }}</h2>
     {% for post in site.posts %}
       <li>
-        {% if page.blog == nil or page.blog == post.blog %}
+        {% if blog == post.blog %}
           {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
 
@@ -21,8 +27,9 @@ layout: default
         {% endif %}
       </li>
     {% endfor %}
-  </ul>
+  {% endfor %}
+  <h2 class="content-chapter-label"><a href="#">Index</a></h2>
+</ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
-</div>
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
