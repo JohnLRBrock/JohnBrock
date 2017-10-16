@@ -7,7 +7,7 @@ layout: default
   <h2 class="book-subtitle">Keep Banging Rocks Together</h2>
   <h2 class="author-name">John Brock</h2>
 </div>
-
+<hr>
 <h1 class="centered">Contents</h1>
 
 <ul class="contents">
@@ -33,20 +33,18 @@ layout: default
     {% for post in site.posts %}
       {% if blog == post.blog %}
         <li class="contents-item">
-          <a class="contents-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-
-          <div class="date-container">
-            {% assign date_format = site.minima.date_format | default: "%b %d, %Y" %}
-            <span class="contents-date">{{ post.date | date: date_format }}</span>
-          </div>
+          <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         </li>
       {% endif %}
     {% endfor %}
   {% endfor %}
-  <li contents-label>
+  <li class="contents-label">
     <a href="#">Index</a>
+  </li>
+  <li class="contents-label">
+    <a href="{{ "/feed.xml" | relative_url }}">RSS Feed</a>
   </li>
 </ul>
 
 
-<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+

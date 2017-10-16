@@ -1,8 +1,14 @@
 .contents {
-  list-style-type: none;
-  li {
+  a {
   }
+  a:hover {
+    text-decoration: none;
+  } 
+  list-style-type: none;
   .contents-label {
-
+    font-size: 24px;
+  }
+  .contents-item {
+    padding-left: 24px;
   }
 }
