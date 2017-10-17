@@ -12,22 +12,22 @@ layout: default
 
 <ul class="contents">
   <li class="contents-label">
-    <a href="#" title="Foreword">Foreword</a>
+    <a href="/foreword" title="Foreword">Foreword</a>
   </li>
   <li class="contents-label">
-    <a href="#" title="About the Author">About the Author</a>
+    <a href="/about" title="About the Author">About the Author</a>
   </li>
   <li class="contents-label">
-    <a href="#" title="projects">Projects</a>
+    <a href="/projects/" title="projects">Projects</a>
   </li>
   {% for blog in site.blogs %}
     {% if blog == "john-brock-js" %}
       <li class="contents-label">
-        <a href="#" title="john-brock.js">Chapter 1: john-brock.js</a>
+        <a href="/john-brock-js/" title="john-brock.js">Chapter 1: john-brock.js</a>
       </li>
     {% elsif blog == "brock-of-ages" %}
       <li class="contents-label">
-        <a href="#" title="john-brock.js">Chapter 2: Brock of Ages</a>
+        <a href="/brock-of-ages/" title="john-brock.js">Chapter 2: Brock of Ages</a>
       </li>
     {% endif %}
     {% for post in site.posts %}
