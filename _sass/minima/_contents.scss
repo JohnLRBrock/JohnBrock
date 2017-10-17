@@ -9,17 +9,9 @@ $contents-width: 475px;
 .contents {
   width: $contents-width;
   margin: 0 auto;
-  a {
-    text-decoration: underline;
-  }
-  a:hover {
-    text-decoration: none;
-  } 
+  a { text-decoration: underline; }
+  a:hover { text-decoration: none; } 
   list-style-type: none;
-  .contents-label {
-    font-size: 24px;
-  }
-  .contents-item {
-    padding-left: 24px;
-  }
+  .contents-label { font-size: 24px; }
+  .contents-item { padding-left: 24px; }
 }

@@ -38,41 +38,45 @@ $width: 600px;
 }
 .centered { text-align: center; }
 
-.book-title {
-}
-
-.book-subtitle {
-}
-
-.author-name {
-
-}
-
 .post-list {
   li {
-    height: 50px;
-    h2 {
-      margin-bottom: 0;
-    }
+    height: 32px;
   }
-  .content-list-item {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 50px;
-    .post-link {
+  .post-link {
+    font-size: 18px;
+  }
+  .date-container {
+    width: 110px;
+    .post-date {
       font-size: 18px;
-    }
-    .date-container {
-      width: 110px;
-      .post-date {
-        font-size: 18px;
-      }
     }
   }
 }
 
+
+.index {
+  .post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li { margin-bottom: $spacing-unit; }
+  }
+
+  .post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+  }
+
+  .post-link {
+    display: block;
+    @include relative-font-size(1.25);
+  }
+}
+
+
+
 .site-nav {
-  float: right;
+  // float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
@@ -93,57 +97,56 @@ $width: 600px;
     }
   }
 
-  @include media-query($on-palm) {
-    position: absolute;
-    top: 9px;
-    right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
 
-    label[for="nav-trigger"] {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 36px;
-      z-index: 2;
-      cursor: pointer;
+  position: absolute;
+  top: 9px;
+  right: $spacing-unit / 2;
+  background-color: $background-color;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
+  // text-align: right;
+
+  label[for="nav-trigger"] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .menu-icon {
+    display: block;
+    // float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+
+    > svg path {
+      fill: $grey-color-dark;
     }
+  }
 
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      line-height: 0;
-      padding-top: 10px;
-      text-align: center;
+  input ~ .trigger {
+    clear: both;
+    display: none;
+  }
 
-      > svg path {
-        fill: $grey-color-dark;
-      }
+  input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  .page-link {
+    display: block;
+    padding: 5px 10px;
+
+    &:not(:last-child) {
+      margin-right: 0;
     }
-
-    input ~ .trigger {
-      clear: both;
-      display: none;
-    }
-
-    input:checked ~ .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
-
-      &:not(:last-child) {
-        margin-right: 0;
-      }
-      margin-left: 20px;
-    }
+    margin-left: 20px;
   }
 }
 
