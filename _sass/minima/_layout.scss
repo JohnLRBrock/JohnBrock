@@ -1,3 +1,4 @@
+$width: 600px;
 /**
  * Site header
  */
@@ -31,7 +32,10 @@
   align-items: center;
 }
 
-
+.wrapper {
+  width: $width;
+  margin: 0 auto;
+}
 .centered { text-align: center; }
 
 .book-title {
