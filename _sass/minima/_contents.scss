@@ -1,17 +1,36 @@
-$contents-width: 475px;
+$contents-list-width: 475px;
+
+.book-title-page {
+  *  { margin-bottom: 0; }
+  .book-title {
+    // font-size: ;
+    
+  }
+  .book-subtitle {
+
+  }
+  .author-name {
+    // margin
+  }
+}
 
 .contents-header {
-  width: $contents-width;
+  max-width: $contents-list-width;
   margin: 0 auto;
   border-top: 1px solid black;
 }
 
 .contents {
-  width: $contents-width;
+  max-width: $contents-list-width;
   margin: 0 auto;
   a { text-decoration: underline; }
   a:hover { text-decoration: none; } 
   list-style-type: none;
-  .contents-label { font-size: 24px; }
-  .contents-item { padding-left: 24px; }
+  .contents-label {
+    font-size: 24px;
+  }
+  .contents-item { 
+    padding-left: 24px;
+    padding: 5px 0 5px 24px;
+  }
 }
