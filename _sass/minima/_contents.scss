@@ -1,22 +1,30 @@
 $contents-list-width: 475px;
 
 .book-title-page {
-  *  { margin-bottom: 0; }
+  font-family: $special-font-family;
+  text-align: center;
+  text-transform: uppercase;
   .book-title {
-    // font-size: ;
-    
+    font-size: 32px;
+    margin-bottom: 0;
   }
   .book-subtitle {
-
+    font-size: 22px;
+    // margin-top: 5px;
+    margin-bottom: 0;
   }
   .author-name {
-    // margin
+    font-size: 28px;
+    margin-top: 28px;
+    margin-bottom: 10px;
   }
 }
 
 .contents-header {
+  font-family: $special-font-family;
   max-width: $contents-list-width;
   margin: 0 auto;
+  padding-top: 50px;
   border-top: 1px solid black;
 }
 
@@ -28,6 +36,7 @@ $contents-list-width: 475px;
   list-style-type: none;
   .contents-label {
     font-size: 24px;
+    font-family: $special-font-family;
   }
   .contents-item { 
     padding-left: 24px;

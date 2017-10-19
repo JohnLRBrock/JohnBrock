@@ -24,13 +24,6 @@
   }
 }
 
-
-.book-title-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .wrapper {
   max-width: $content-width;
   margin: 0 auto;
@@ -259,6 +252,7 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
+  font-family: $special-font-family;
 }
 
 .post-title {
@@ -275,6 +269,7 @@
   margin-bottom: $spacing-unit;
 
   h2 {
+    font-family: $special-font-family;
     @include relative-font-size(2);
 
     @include media-query($on-laptop) {
@@ -283,6 +278,7 @@
   }
 
   h3 {
+    font-family: $special-font-family;
     @include relative-font-size(1.625);
 
     @include media-query($on-laptop) {
