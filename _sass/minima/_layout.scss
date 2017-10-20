@@ -252,7 +252,7 @@
  */
 .post-header {
   margin-bottom: $spacing-unit;
-  font-family: $special-font-family;
+  // font-family: $special-font-family;
 }
 
 .post-title {
@@ -292,5 +292,21 @@
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
     }
+  }
+}
+
+/* About page */
+
+.about-the-author {
+  display: flex;
+  justify-content: space-around;
+  img {
+    padding-right: 20px;
+    border-radius: 50%;
+    width: 190px;
+    height: 190px;
+  }
+  p {
+    max-width: 560px;
   }
 }

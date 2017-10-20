@@ -29,6 +29,8 @@ $contents-list-width: 475px;
 }
 
 .contents {
+  font-weight: 500;
+  font-family: $base-font-family;
   max-width: $contents-list-width;
   margin: 0 auto;
   a { text-decoration: underline; }
@@ -36,7 +38,6 @@ $contents-list-width: 475px;
   list-style-type: none;
   .contents-label {
     font-size: 24px;
-    font-family: $special-font-family;
   }
   .contents-item { 
     padding-left: 24px;
