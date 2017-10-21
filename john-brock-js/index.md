@@ -1,6 +1,6 @@
 ---
 blog: john-brock-js
 title: john-brock.js
-layout: chapter
+layout: home
 permalink: /john-brock-js/
 ---
