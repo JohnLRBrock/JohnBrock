@@ -34,7 +34,8 @@ $contents-list-width: 475px;
   max-width: $contents-list-width;
   margin: 0 auto;
   a { text-decoration: underline; }
-  a:hover { text-decoration: none; } 
+  a:hover { text-decoration: none; }
+  a:visited { color: #2a7ae2; }
   list-style-type: none;
   .contents-label {
     font-size: 24px;
