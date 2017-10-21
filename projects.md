@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Projects
-permalink: /projects/
+title: Portfolio
+permalink: /portfolio/
 ---
 <a href="https://github.com/khanthulhu">
   Github
