@@ -1,6 +1,16 @@
-.tic-tac-toe {
-
-}
-.project img {
-  border-radius: 3px;
+$project-margin: 15px 0;
+.project {
+  margin-bottom: 100px;
+  .project-title {
+    margin: $project-margin;
+    a {
+      color: $text-color;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+  img {
+    border-radius: 3px;
+  }
 }
