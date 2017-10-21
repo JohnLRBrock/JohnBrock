@@ -1,9 +1,10 @@
 <header class="site-header" role="banner">
 
-  <div class="wrapper relative">
+  <div class="wrapper">
     {% assign default_paths = site.pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.logo | escape }}</a>
+  
     {% if page_paths %}
       <nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
@@ -18,13 +19,12 @@
         </label>
 
         <div class="trigger">
-          <a href="/" class="page-link" title="Home">Home</a>
-          <a href="/foreword" class="page-link" title="Foreword">Foreword</a>
-          <a href="/about/" class="page-link" title="About the Author">About the Author</a>
-          <a href="/portfolio" class="page-link"  title="Portfolio">Portfolio</a>
-          <a href="/john-brock-js/" class="page-link" title="john-brock.js">john-brock.js</a>
-          <a href="/brock-of-ages/" class="page-link" title="Borck of Ages">Brock of Ages</a>
-          <a href="/index" class="page-link" title="Index">Index</a>
+          <!-- <a class="page-link" href="/multifaceted-rubyist/">Multifaceted Rubyist</a> -->
+          <a class="page-link" href="/john-brock-js/">john-brock.js</a>
+          <a class="page-link" href="/brock-of-ages/">Brock of Ages</a>
+          <!-- <a class="page-link" href="/go-fast/">Go Fast!</a> -->
+          <!-- <a class="page-link" href="/pursuit-of-happiness/">Pursuit of Happiness</a> -->
+          <a class="page-link" href="/about/">About</a>
         </div>
       </nav>
     {% endif %}
