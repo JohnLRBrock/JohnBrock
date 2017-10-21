@@ -2,16 +2,20 @@
 
 // Define defaults for each variable.
 
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-family: "open-sans", sans-serif !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
+$roboto-font-family: "Roboto", "open-sans", sans-serif !default;
+$special-font-family: 'Scope One', serif;
+
+
 $spacing-unit:     30px !default;
 
 $text-color:       #111 !default;
-$background-color: #fdfdfd !default;
+$background-color: rgba(253,253,253,0.9) !default;
 $brand-color:      #2a7ae2 !default;
 
 $grey-color:       #828282 !default;
@@ -20,7 +24,6 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 // Width of the content area
 $content-width:    800px !default;
-
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
@@ -41,9 +44,13 @@ $on-laptop:        800px !default;
   font-size: $base-font-size * $ratio;
 }
 
+
 // Import partials.
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/contents",
+  "minima/syntax-highlighting",
+  "minima/animations",
+  "minima/portfolio"
 ;
