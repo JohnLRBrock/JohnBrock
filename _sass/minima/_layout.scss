@@ -31,9 +31,11 @@
 .centered { text-align: center; }
 
 .post-list {
-  li {
-    height: 32px;
-  }
+  display: flex;
+  flex-direction: column;
+  // li {
+  //   height: 32px;
+  // }
   .post-link {
     font-size: 18px;
   }
@@ -43,22 +45,10 @@
       font-size: 18px;
     }
   }
-}
-
-
-.index {
-  .post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li { margin-bottom: $spacing-unit; }
-  }
-
   .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
   }
-
   .post-link {
     display: block;
     @include relative-font-size(1.25);
