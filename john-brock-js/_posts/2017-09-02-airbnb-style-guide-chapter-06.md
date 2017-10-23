@@ -1,13 +1,13 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 6: Strings"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-6"
+title: "ELI50: Airbnb JavaScript Style Guide Section 6: Strings"
+permalink: "/john-brock-js/airbnb-styleguide-section-6"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 6th chapter of the style guide is **strings** which are a primitive data-type which represents a  string of characters. Strings can be used to represent a wide variety of data, from text, to keys in objects.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 6th section of the style guide is **strings** which are a primitive data-type which represents a  string of characters. Strings can be used to represent a wide variety of data, from text, to keys in objects.
 
-## Chapter 6: Strings
+## Section 6: Strings
 ### [6.1][6.1]: Use single quotes '' for strings.
 Double and single quotes are functionally the same except that strings made with single quotes can be used in double quote strings and vice versa.
 ```'When I use single quotes my string can contain "double quotes".'```

@@ -1,18 +1,18 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 1: Types"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-1"
+title: "ELI50: Airbnb JavaScript Style Guide Section 1: Types"
+permalink: "/john-brock-js/airbnb-styleguide-section-1"
 ---
 [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
-Each post will cover a chapter of the style guide and will explain terminology, techniques and the reason behind the rules.
+Each post will cover a section of the style guide and will explain terminology, techniques and the reason behind the rules.
 
 > # What the heck is ESLint and JSCS?
 Periodically in the guide you'll see links labeled with either ESLint and JSCS. These are two popular **linting programs**, which check your for errors, style mistakes, and bad practices in your code. I go deeper into them in a soon to be released john-brock.js post but suffice it to say that if you're doing anything more than trivial programming you should be using a linter. For JavaScript I would recommend [ESLint][eslint].
 
 <br>
-## Chapter 1: Types
+## Section 1: Types
 ### [1.1][1.1] **Primitives**: When you access a primitive type you work directly on its value.
 
 In JavaScript a data type is a way of storing information. A primitive type is the most basic form of this.

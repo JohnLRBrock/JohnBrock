@@ -1,13 +1,13 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 5: Destructuring"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-5"
+title: "ELI50: Airbnb JavaScript Style Guide Section 5: Destructuring"
+permalink: "/john-brock-js/airbnb-styleguide-section-5"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 5th chapter of the style guide is **destructuring** which is a convenient way of extracting data from arrays, and objects. To learn the basics of destructuring you can read this simple guide from [Wes Bos][destructuring intro] and to get a deeper dive you can read this guide from [untangled.io][deeper dive].
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 5th section of the style guide is **destructuring** which is a convenient way of extracting data from arrays, and objects. To learn the basics of destructuring you can read this simple guide from [Wes Bos][destructuring intro] and to get a deeper dive you can read this guide from [untangled.io][deeper dive].
 
-## Chapter 5: Destructuring
+## Section 5: Destructuring
 ># What does destructuring look like?
 Destructuring looks backwards at first. With arrays, each variable on the left is being assigned, in order, to the elements in the array on the right.
 ```javascript

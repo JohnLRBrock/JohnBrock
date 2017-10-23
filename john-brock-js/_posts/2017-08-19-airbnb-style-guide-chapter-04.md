@@ -1,13 +1,13 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 4: Arrays"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-4"
+title: "ELI50: Airbnb JavaScript Style Guide Section 4: Arrays"
+permalink: "/john-brock-js/airbnb-styleguide-section-4"
 ---
 
-The topic of the fourth chapter of the style guide is **arrays** which are handy objects for containing collections of ordered data. To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
+The topic of the fourth section of the style guide is **arrays** which are handy objects for containing collections of ordered data. To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
 
-## Chapter 4: Arrays
+## Section 4: Arrays
 ### [4.1][4.1]: Use the literal syntax for array creation. eslint: [no-array-constructor][no-array-constructor]
 There are two main ways of creating arrays. Just like with object construction, using literals is faster and less prone to errors and is therefore the preferred method for creating arrays.
 ```javascript

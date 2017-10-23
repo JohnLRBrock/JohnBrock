@@ -1,18 +1,18 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 3: Objects"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-3"
+title: "ELI50: Airbnb JavaScript Style Guide Section 3: Objects"
+permalink: "/john-brock-js/airbnb-styleguide-section-3"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover chapter 3 on **objects**, creating, and using them.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover section 3 on **objects**, creating, and using them.
 
 > # What the heck is an object?
 Simply put an object is a way to **encapsulate** something in a way that can be used or modified later. Objects can have variables and functions that act on them. The reason that objects are so useful is because you can create new objects that **inherit** properties from other objects. You could, for instance, make an object to represent a car which has variables to indicate it has an engine, four wheels, methods that let the user drive it. From there you can create other objects that inherit those properties from Car and add other ones like being able to drive itself. Programmers, being a lazy folk, do their best to follow something called the DRY principle ([Don't Repeat Yourself][DRY]). Objects are a useful way to package code for reuse in other places.
 
 
 <br>
-## Chapter 3: Objects
+## Section 3: Objects
 ### [3.1][3.1]: Use the literal syntax for object creation. eslint: [`no-new-object`][no-new-object]
 
 Although the new object syntax, `const myObj = new Object;`, isn't harmful it takes longer to write and can cause problems for you if you forget the `new`. Object literal syntax, `const myObj = {};`, is faster to write, easier to read, and harder to mess up. If you want to learn more about the why we tend to use the second version read the answers on this [stack overflow question.][SO object literal]

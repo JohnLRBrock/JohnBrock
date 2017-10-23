@@ -1,14 +1,14 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Chapter 2: References"
-permalink: "/john-brock-js/airbnb-styleguide-chapter-2"
+title: "ELI50: Airbnb JavaScript Style Guide Section 2: References"
+permalink: "/john-brock-js/airbnb-styleguide-section-2"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover chapter 2 on references, or why to avoid using `var`.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover section 2 on references, or why to avoid using `var`.
 
 <br>
-## Chapter 2: References
+## Section 2: References
 ### [2.1][2.1]: Use const for all of your references; avoid using var.
 There are three **reserved words** you can use to create variables with JavaScript. They are `var`, `const`, and `let`. When you are defining a variable that won't change, like Pi, use `const` which stands for constant.
 ```javascript
