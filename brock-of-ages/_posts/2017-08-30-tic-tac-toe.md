@@ -9,4 +9,4 @@ I used this project as an opportunity to learn about CSS Grid which I found out 
 
 Grid is a powerful tool for creating web page layouts but for some implantations there's a larger than expected learning curve.
 
-All in all, I'm really proud of how this project turned out. The layout looks great at all reasonable resolutions, color scheme is bright and pleasant, and the animations make everything feel just a little bit better. Click this link if you want to view the [source code][https://github.com/Khanthulhu/tic-tac-toe].
+All in all, I'm really proud of how this project turned out. The layout looks great at all reasonable resolutions, color scheme is bright and pleasant, and the animations make everything feel just a little bit better. Click this link if you want to view the [source code](https://github.com/Khanthulhu/tic-tac-toe).
