@@ -10,41 +10,25 @@ Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide]
 This post will cover section 3 on **objects**, creating, and using them.
 
 > # What the heck is an object?
-Simply put an object is a way to **encapsulate** something in a way that can be used or modified later. Objects can have variables and functions that act on them. The reason that objects are so useful is because you can create new objects that **inherit** properties from other objects. You could, for instance, make an object to represent a car which has variables to indicate it has an engine, four wheels, methods that let the user drive it. From there you can create other objects that inherit those properties from Car and add other ones like being able to drive itself. Programmers, being a lazy folk, do their best to follow something called the DRY principle ([Don't Repeat Yourself][DRY]). Objects are a useful way to package code for reuse in other places.
+Simply put an object is a way to **encapsulate** something in a way that can be used or modified later. Objects can have variables and functions (called **methods**) that act on them. The reason that objects are so useful is because you can create new objects that **inherit** properties from other objects. You could, for instance, make an object to represent a car which has variables to indicate it has an engine, four wheels, methods that let the user drive it. From there you can create other objects that inherit those properties from Car and add other ones like being able to drive itself. Programmers, being a lazy folk, do their best to follow something called the DRY principle ([Don't Repeat Yourself][DRY]). Objects are a useful way to package code for reuse in other places.
 
 
 <br>
 ## Section 3: Objects
 ### [3.1][3.1]: Use the literal syntax for object creation. eslint: [`no-new-object`][no-new-object]
 
-Although the new object syntax, `const myObj = new Object;`, isn't harmful it takes longer to write and can cause problems for you if you forget the `new`. Object literal syntax, `const myObj = {};`, is faster to write, easier to read, and harder to mess up. If you want to learn more about the why we tend to use the second version read the answers on this [stack overflow question.][SO object literal]
+Although the new object syntax, `const myObj = new Object();`, isn't harmful it takes longer to write and can cause problems for you if you forget the `new`. Object literal syntax, `const myObj = {};`, is faster to write, easier to read, and harder to mess up. If you want to learn more about why we tend to use the second version, read the answers on this [stack overflow question.][SO object literal]
 
 ### [3.2][3.2]: Use computed property names when creating objects with dynamic property names.
 
-JavaScript has a nifty feature that allows you to add or create properties for objects without knowing what the name of the property will be until the program is executed. This is helpful, for instance, when you want to create objects from data because you can create the names problematically instead of having to input them by hand. It's best to add the property name when you make the object so that you can keep all the properties in the same place.
-
-### [3.3][3.3]: Use object method shorthand.
-
-Functions that belong to objects are called **methods**. These methods can be called on the object like `object.foo()`. This form of declaring functions is less verbose and easier to read.
-
-### [3.4][3.4]: Use property value shorthand.
-
-If the name of the property shares the name with the variable you're setting it to you can use property value shorthand which saves time and is more expressive.
-
-### [3.5][3.5]: Group your shorthand properties at the beginning of your object declaration.
-
-This is an example of code organization which makes the code clearer.
-
-### [3.6][3.6]: Only quote properties that are invalid identifiers.
-
-Some property names can be used but only when quoted. `'foo-bar'` would work but `foo-bar` (not quoted) will not. You could quote every name, for safety, but it's more verbose and it will probably rare where your property name will need the quotes.
+JavaScript has a nifty feature that allows you to add or create properties for objects without knowing what the name of the property will be until the program is executed. This is helpful, for instance, when you want to create objects from data because you can create the names **programmatically**, instead of having to input them by hand. It's best to add the property name when you make the object so that you can keep all the properties in the same place. To learn more about computed properties or to see examples check out this [guide][computed properties] from Mozilla.
 
 ### [3.7][3.7]: Do not call `Object.prototype` methods directly, such as `hasOwnProperty`, `propertyIsEnumerable`, and `isPrototypeOf`.
 
-There are some cases when calling `Object.prototype` methods directly (like `console.log(object.hasOwnProperty(key));`) can have unintended behavior, for instance if the object was null or if the method was **shadowed** by a property on the object.
+There are some cases when calling `Object.prototype` methods directly, like `console.log(object.hasOwnProperty(key));`, can have unintended behavior. For instance if the object was null or if the method was **shadowed** by a property on the object.
 
 > # What the heck is shadowing?
-Shadowing is a concept related to scope. If you define a global variable and then a define a new variable in a more local scope, like in a function, then when you call the variable the local variable will be the one that gets used. In this instance it could look like this:
+Shadowing is a concept related to scope. If you define a global variable and then a define a new variable in a more local scope, like in a function, then when you call the variable, the local variable will be the one that gets used. In this instance it could look like this:
 ```javascript
 myObject = {
   magic: true;
@@ -62,7 +46,7 @@ All JavaScript values except primitives are objects. You'll be working with obje
 ### Next Up: Arrays
 Next Saturday I'll explain what Arrays are and how to use them.
 
-If you did or didn't like this article, let me know how you feel in the comments below.
+If you did or did not like this article, let me know how you feel in the comments below.
 
 [style guide]: https://github.com/airbnb/javascript#types--primitives
 [airbnb]: https://www.airbnb.com/
@@ -75,6 +59,9 @@ If you did or didn't like this article, let me know how you feel in the comments
 [3.6]: https://github.com/airbnb/javascript#objects--quoted-props
 [3.7]: https://github.com/airbnb/javascript#objects--prototype-builtins
 
+[no-new-object]: http://eslint.org/docs/rules/no-new-object.html
+
 [DRY]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [SO object literal]: https://stackoverflow.com/questions/383402/is-javascripts-new-keyword-considered-harmful
 [W3S Objects Guide]: https://www.w3schools.com/js/js_object_definition.asp
+[computed properties]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer
