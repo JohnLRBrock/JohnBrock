@@ -5,7 +5,9 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 5: Destructuring"
 permalink: "/john-brock-js/airbnb-styleguide-section-5"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 5th section of the style guide is **destructuring** which is a convenient way of extracting data from arrays, and objects. To learn the basics of destructuring you can read this simple guide from [Wes Bos][destructuring intro] and to get a deeper dive you can read this guide from [untangled.io][deeper dive].
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+
+The topic of the 5th section of the style guide is **destructuring** which is a convenient way of extracting data from arrays, and objects. To learn the basics of destructuring you can read this simple guide from [Wes Bos][destructuring intro] and to get a deeper dive you can read this guide from [untangled.io][deeper dive].
 
 ## Section 5: Destructuring
 ># What does destructuring look like?

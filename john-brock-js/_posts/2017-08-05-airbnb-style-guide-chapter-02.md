@@ -5,7 +5,9 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 2: References"
 permalink: "/john-brock-js/airbnb-styleguide-section-2"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover section 2 on references, or why to avoid using `var`.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+
+ This post will cover section 2 on references, or why to avoid using `var`.
 
 <br>
 ## Section 2: References
@@ -20,11 +22,11 @@ This practice helps prevent bugs and makes your intent clearer, increasing reada
 Reserved words are the words of power that make up JavaScript like `if`, `new`, and `for`. These words have fixed meanings and aren't allowed to be redefined by the programmer (which means you can't make a variable called 'if', for instance.) The three reserved words we're talking about in this post are `let`, `const`, and `var`.
 
 ### [2.2][2.2]: If you must reassign references, use let instead of var.
-Using `const` for variables that won't change makes sense, but why use `let` over `var`? At the risk of oversimplifying, `let` can do almost everything that `var` can, while also avoiding unintentional bizarre behavior as described in this article from [Vegibit][let vs var vs const vegibit].
+Using `const` for variables that won't change makes sense, but why use `let` over `var`? At the risk of oversimplifying, `let` can be used for almost everything that `var` can, while also avoiding unintentional bizarre behavior as described in this article from [Vegibit][let vs var vs const vegibit].
 
 ### [2.3][2.3]: Note that both let and const are block-scoped.
 
-This is one of the most important differences between the preferred reserved words, `let` and `const`, and the less preferred reserved word, `var`. Scope refers to what something can see. If I define a variable with `let` outside a function and then define a variable with the same name inside the function the variable outside the function won't change.
+This is one of the most important differences between the preferred reserved words, `let` and `const`, and the less preferred reserved word, `var`. **Scope** refers to what something can see. If I define a variable with `let` outside a function and then define a variable with the same name inside the function the variable outside the function won't change because it can't see it.
 ```javascript
 let myName = 'John'; // => 'John'
 function() {
@@ -32,7 +34,7 @@ function() {
 }
 myName; // => 'John'
 ```
-However, if we changed `let` to `var` then myName can be changed from inside the function.
+The first `myName` is outside of the function's scope and the function doesn't see it. The function can only see the `myName` variable inside itself. This means we're working with two different variables which happen to have the same name but are in different scopes. However, if we changed `let` to `var` then `myName` can be changed from inside the function. This is because `var` creates the variables in the global scope.
 ```javascript
 var myName = 'John'; // => 'John'
 function() {
@@ -44,7 +46,7 @@ Although there are other reasons to avoid `var`, how it handles scope is probabl
 
 <br>
 ### Why Should I Care?
-The changes recommended in this section are easy to implement, especially with the use of a linter, make your code more expressive, and can save you loads of headaches in the future.
+The changes recommended in this section are easy to implement, especially with the use of a linter, makes your code more expressive, and can save you loads of headaches in the future.
 
 <br>
 ### Next Up: Objects

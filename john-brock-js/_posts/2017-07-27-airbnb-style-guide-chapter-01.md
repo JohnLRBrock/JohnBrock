@@ -9,7 +9,7 @@ permalink: "/john-brock-js/airbnb-styleguide-section-1"
 Each post will cover a section of the style guide and will explain terminology, techniques and the reason behind the rules.
 
 > # What the heck is ESLint and JSCS?
-Periodically in the guide you'll see links labeled with either ESLint and JSCS. These are two popular **linting programs**, which check your for errors, style mistakes, and bad practices in your code. I go deeper into them in a soon to be released john-brock.js post but suffice it to say that if you're doing anything more than trivial programming you should be using a linter. For JavaScript I would recommend [ESLint][eslint].
+Periodically in the guide you'll see links labeled with either ESLint and JSCS. These are two popular **linting programs**, which check for errors, style mistakes, and bad practices in your code. I will go deeper into them in a soon to be released john-brock.js post but suffice it to say that if you're doing anything more than trivial programming you should be using a linter. For JavaScript I would recommend [ESLint][eslint].
 
 <br>
 ## Section 1: Types

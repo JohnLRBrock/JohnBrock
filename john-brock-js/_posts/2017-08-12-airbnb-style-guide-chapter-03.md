@@ -5,7 +5,9 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 3: Objects"
 permalink: "/john-brock-js/airbnb-styleguide-section-3"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. This post will cover section 3 on **objects**, creating, and using them.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+
+This post will cover section 3 on **objects**, creating, and using them.
 
 > # What the heck is an object?
 Simply put an object is a way to **encapsulate** something in a way that can be used or modified later. Objects can have variables and functions that act on them. The reason that objects are so useful is because you can create new objects that **inherit** properties from other objects. You could, for instance, make an object to represent a car which has variables to indicate it has an engine, four wheels, methods that let the user drive it. From there you can create other objects that inherit those properties from Car and add other ones like being able to drive itself. Programmers, being a lazy folk, do their best to follow something called the DRY principle ([Don't Repeat Yourself][DRY]). Objects are a useful way to package code for reuse in other places.

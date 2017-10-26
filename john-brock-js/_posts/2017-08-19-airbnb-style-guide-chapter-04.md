@@ -5,6 +5,8 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 4: Arrays"
 permalink: "/john-brock-js/airbnb-styleguide-section-4"
 ---
 
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+
 The topic of the fourth section of the style guide is **arrays** which are handy objects for containing collections of ordered data. To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
 
 ## Section 4: Arrays

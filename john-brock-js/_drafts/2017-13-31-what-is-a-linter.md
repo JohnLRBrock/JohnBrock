@@ -7,3 +7,5 @@ Each programmer has their own style, conscious or otherwise. Some people are ver
 
 [airbnb styleguide]: https://github.com/airbnb/javascript
 [eslint jscs]: http://eslint.org/blog/2016/04/welcoming-jscs-to-eslint
+
+TODO: link to this in the ESLINT section of section 1 and in section 2

@@ -5,7 +5,9 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 6: Strings"
 permalink: "/john-brock-js/airbnb-styleguide-section-6"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 6th section of the style guide is **strings** which are a primitive data-type which represents a  string of characters. Strings can be used to represent a wide variety of data, from text, to keys in objects.
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
+
+The topic of the 6th section of the style guide is **strings** which are a primitive data-type which represents a  string of characters. Strings can be used to represent a wide variety of data, from text, to keys in objects.
 
 ## Section 6: Strings
 ### [6.1][6.1]: Use single quotes '' for strings.
