@@ -5,7 +5,7 @@ title: "ELI50: Airbnb JavaScript Style Guide Section 7: Functions "
 permalink: "/john-brock-js/airbnb-styleguide-section-7"
 ---
 
-Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. The topic of the 7th section of the style guide is **functions** which are ways to package up code for re-use. Functions are enormously important topic in programming. With proper use they make your code DRYer, more secure, easier to test and maintain, and less prone to bugs. Using functions properly is tied to many concepts in computer science and the topic is therefore to wide for a single article to cover in depth. That being said, if you want a refresher on functions or their syntax, I recommend this [w3schools][function basics] article and if you want a more detailed reference on functions check out this page from [mozilla][function reference].
+Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. Note that this isn't meant as a replacement for reading the style guide but simply a supplement. The topic of the 7th section of the style guide is **functions** which are ways to package up code for re-use. Functions are enormously important topic in programming. With proper use they make your code DRYer, more secure, easier to test and maintain, and less prone to bugs. Using functions properly is tied to many concepts in computer science and the topic is therefore to wide for a single article to cover in depth. That being said, if you want a refresher on functions or their syntax, I recommend this [w3schools][function basics] article and if you want a more detailed reference on functions check out this page from [mozilla][function reference].
 
 Note that there are many rules in this section and some of them I will skip either because they are self explanatory or are thoroughly explained by Airbnb.  
 
@@ -29,14 +29,15 @@ JavaScript has this fun feature where if you don't supply a function the argumen
 A **side effect** is when a function modifies something outside of its scope. In Airbnb's example the function is modifying the variable b which is defined outside the function. This goes against the rule of encapsulation and can make your programs have strange behaviors and even stranger bugs.
 ### [7.10][7.10]: Never use the Function constructor to create a new function.
 I talked about why eval() is bad in the [strings]({% post_url 2017-09-02-airbnb-style-guide-section-6 %}) section. Just like with eval(), if you're not careful, this could allow malicious users to insert and run their own code in your program. It's best not use it at all so you don't have to worry about this vulnerability.
-### [7.12][7.12]: Never mutate parameters.
-### [7.13][7.13]: Never reassign parameters. 
 ### [7.14][7.14]: Prefer the use of the spread operator ... to call variadic functions.
-### [7.15][7.15]: Functions with multiline signatures, or invocations, should be indented just like every other multiline list in this guide: with each item on a line by itself, with a trailing comma on the last item.
+># What are variadic functions?
 
-> #What the heck is ?
-<br>
+A variadic function is one that can accept different numbers of variables as arguments. This can give certain functions more flexibility and can make for more flexible and readable code.
+### [7.15][7.15]: Functions with multiline signatures, or invocations, should be indented just like every other multiline list in this guide: with each item on a line by itself, with a trailing comma on the last item.
+When you have code that, when on a single line would be too long, you can usually spread them out to several lines to make them more manageable and easier to read. Although the examples given by Airbnb don't seem easier to read them having them on a single line, imagine if each of the variables were several words long or involved function invocations. Things would quickly get out of hand.
+
 ### Why Should I Care?
+Functions are one of the most powerful tools a developer has. Everyone knows how to use them, but not every one knows how to use them properly. Proper use of functions will step up your programming game and make your code less error prone, easier to write, and easier to maintain.
 
 <br>
 ### Next up: 
@@ -52,14 +53,10 @@ Next Saturday I'll explain
 [7.5]: https://github.com/airbnb/javascript#functions--arguments-shadow
 [7.7]: https://github.com/airbnb/javascript#es6-default-parameters
 [7.8]: https://github.com/airbnb/javascript#functions--default-side-effects
-[7.]:
-[7.]:
-[7.]:
-[7.]:
-[7.]:
-[7.]:
-[7.]:
-[7.]:
+[7.10]: https://github.com/airbnb/javascript#functions--constructor
+[7.14]: https://github.com/airbnb/javascript#functions--spread-vs-apply
+[7.15]: https://github.com/airbnb/javascript#functions--signature-invocation-indentation
+
 
 [hoisting basics]: https://www.w3schools.com/js/js_hoisting.asp
 
