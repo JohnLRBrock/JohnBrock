@@ -46,7 +46,7 @@ Although there are other reasons to avoid `var`, how it handles scope is probabl
 
 <br>
 ### Why Should I Care?
-The changes recommended in this section are easy to implement, especially with the use of a linter, makes your code more expressive, and can save you loads of headaches in the future.
+The changes recommended in this section are easy to implement, especially with the use of a [linter][linters], makes your code more expressive, and can save you loads of headaches in the future.
 
 <br>
 ### Next Up: Objects
@@ -63,3 +63,4 @@ If you learned something from this post, have some constructive criticism or jus
 [2.3]: htps://github.com/airbnb/javascript#references--block-scope
 
 [let vs var vs const vegibit]: http://vegibit.com/es6-let-vs-var-vs-const/
+[linters]: http://johnbrock.io/john-brock-js/what-is-a-linter
