@@ -14,6 +14,8 @@ There are several JavaScript linters. For a long time the two main JavaScript li
 
 Linters are incredibly useful programs, especially for novices. If you haven't tried using one before, I highly recommend it. You'll wonder how you ever coded without one.
 
+If you enjoyed learning about linters, have a criticism, or just want to say hi, leave a comment below.
+
 [airbnb styleguide]: https://github.com/airbnb/javascript
 [eslint jscs]: http://eslint.org/blog/2016/04/welcoming-jscs-to-eslint
 [rubocop]: https://github.com/bbatsov/rubocop
