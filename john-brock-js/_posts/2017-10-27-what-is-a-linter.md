@@ -18,7 +18,3 @@ Linters are incredibly useful programs, especially for novices. If you haven't t
 [eslint jscs]: http://eslint.org/blog/2016/04/welcoming-jscs-to-eslint
 [rubocop]: https://github.com/bbatsov/rubocop
 [eslint]: https://eslint.org/
-
-
-
-TODO: link to this in the ESLINT section of section 1 and in section 2
