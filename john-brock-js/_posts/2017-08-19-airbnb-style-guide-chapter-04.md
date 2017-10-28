@@ -12,128 +12,18 @@ The topic of the fourth section of the style guide is **arrays** which are handy
 ## Section 4: Arrays
 ### [4.1][4.1]: Use the literal syntax for array creation. eslint: [no-array-constructor][no-array-constructor]
 There are two main ways of creating arrays. Just like with object construction, using literals is faster and less prone to errors and is therefore the preferred method for creating arrays.
-```javascript
-// using new, bad
-const items = new Array();
 
-// using a literal, good
-const items = [];
-```
-### [4.2][4.2]: Use `Array#push` instead of direct assignment to add items to an array.
-Using push is clearer and more succinct.
-```javascript
-const someStack = [];
-
-// bad
-someStack[someStack.length] = 'abracadabra';
-
-// good
-someStack.push('abracadabra');
-```
 ### [4.3][4.3]: Use array spreads ... to copy arrays.
-Spreads are useful ways to copy many objects in JavaScript. For more information read the reference doc from [Mozilla][spread operator documentation]. In this case we use it because is is clearer and more succinct than the alternative.
-```javascript
-// bad
-const len = items.length;
-const itemsCopy = [];
-let i;
+Spreads are useful ways to copy many objects in JavaScript. For more information read the reference doc from [Mozilla][spread operator documentation]. In this case we use it because it is clearer and more succinct.
 
-for (i = 0; i < len; i += 1) {
-  itemsCopy[i] = items[i];
-}
-
-// good
-const itemsCopy = [...items];
-```
 ### [4.4][4.4]: To convert an array-like object to an array, use [`Array.from`][array from].
 Once again, the preferred method is more expressive and easier to write.
 ```javascript
 const foo = document.querySelectorAll('.foo');
 const nodes = Array.from(foo);
 ```
-### [4.5][4.5]: Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2][8.2]. eslint: [array-callback-return][array-callback-return]
+### [4.6][4.6]: Use return statements in array method callbacks. It’s ok to omit the return if the function body consists of a single statement returning an expression without side effects, following [8.2][8.2]. eslint: [array-callback-return][array-callback-return]
 There are certain methods that execute a block of code on each item in an array (Ex. reduce, map, filter, etc.). That block of code is referred to as a callback. If the callback is more than one line long, use a return statement. Otherwise skip it.
-```javascript
-// good
-[1, 2, 3].map((x) => {
-  const y = x + 1;
-  return x * y;
-});
-
-// good
-[1, 2, 3].map(x => x + 1);
-
-// bad
-const flat = {};
-[[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
-  const flatten = memo.concat(item);
-  flat[index] = flatten;
-});
-
-// good
-const flat = {};
-[[0, 1], [2, 3], [4, 5]].reduce((memo, item, index) => {
-  const flatten = memo.concat(item);
-  flat[index] = flatten;
-  return flatten;
-});
-
-// bad
-inbox.filter((msg) => {
-  const { subject, author } = msg;
-  if (subject === 'Mockingbird') {
-    return author === 'Harper Lee';
-  } else {
-    return false;
-  }
-});
-
-// good
-inbox.filter((msg) => {
-  const { subject, author } = msg;
-  if (subject === 'Mockingbird') {
-    return author === 'Harper Lee';
-  }
-
-  return false;
-});
-```
-
-### [4.6][4.6]: Use line breaks after open and before close array brackets if an array has multiple lines
-This simply makes the array more readable.
-```javascript
-// bad
-const arr = [
-  [0, 1], [2, 3], [4, 5],
-];
-
-const objectInArray = [{
-  id: 1,
-}, {
-  id: 2,
-}];
-
-const numberInArray = [
-  1, 2,
-];
-
-// good
-const arr = [[0, 1], [2, 3], [4, 5]];
-
-const objectInArray = [
-  {
-    id: 1,
-  },
-  {
-    id: 2,
-  },
-];
-
-const numberInArray = [
-  1,
-  2,
-];
-```
 
 <br>
 ### Why Should I Care?
