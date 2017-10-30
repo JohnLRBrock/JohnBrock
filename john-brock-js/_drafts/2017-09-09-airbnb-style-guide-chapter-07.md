@@ -41,7 +41,7 @@ Functions are one of the most powerful tools a developer has. Everyone knows how
 
 <br>
 ### Next up: 
-Next Saturday I'll explain 
+Next Saturday I'll explain arrow functions. If you enjoyed this post or just want to say hi, leave me a comment down below.
 
 [airbnb]: https://www.airbnb.com/
 [style guide]: https://github.com/airbnb/javascript#types--primitives
