@@ -9,8 +9,8 @@ permalink: "/john-brock-js/airbnb-styleguide-section-arrow-functions"
 
 This week will cover a new feature to ES6, **arrow functions** `() => {}`. This is JavaScript's version of a **lambda function**. These are small, nameless functions that can be passed as an argument. They are more terse than creating an anonymous function with `function() {}` but there's more to arrow functions than that!
 
-## Section : 
-### [][]:
+## Section 8: Arrow Functions
+### [8.1][8.1]:When you must use an anonymous function (as when passing an inline callback), use arrow function notation. eslint: [prefer-arrow-callback][prefer-arrow-callback], arrow-spacing jscs: requireArrowFunctions
 
 > #What the heck is ?
 <br>
@@ -25,5 +25,8 @@ Next Saturday I'll explain
 [8.3]: https://github.com/airbnb/javascript#arrows--paren-wrap
 [8.4]: https://github.com/airbnb/javascript#arrows--one-arg-parens
 [8.5]: https://github.com/airbnb/javascript#arrows--confusing
+
+[prefer-arrow-callback]: https://eslint.org/docs/rules/prefer-arrow-callback.html
+
 [airbnb]: https://www.airbnb.com/
 [style guide]: https://github.com/airbnb/javascript#types--primitives
