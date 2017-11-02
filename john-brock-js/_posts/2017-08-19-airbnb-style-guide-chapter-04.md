@@ -7,7 +7,12 @@ permalink: "/john-brock-js/airbnb-styleguide-section-4"
 
 Welcome back to my weekly [Airbnb][airbnb] JavaScript [style guide][style guide] explainer. [Airbnb][airbnb], the online marketplace for housing rentals, has a high quality and 'mostly reasonable' style guide for JavaScript, a programming language that adds dynamic behaviors to web browsers. Some of the topics in the guide are a bit advanced for beginners. This "Explain Like I'm 50" (ELI50) series will act as a plain English companion-guide to the [Airbnb style guide][style guide], because good design principles shouldn't be out of anyone's reach.
 
-The topic of the fourth section of the style guide is **arrays** which are handy objects for containing collections of ordered data. To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
+This section covers **arrays** which are handy objects for containing collections of ordered data. Arrays are an ordered list of data, each having an index number. The numbers start at 0, meaning that arrays are **zero indexed**, and go all the way to the length of the array minus one. There are tons of useful array methods, from ones that perform an action on each item in the array, to ones that transform the array, such as the sort function. The array is one of the most basic data structures and are used all the time.
+
+### When shouldn't I use arrays?
+Arrays come with some limitations. For instance, when you remove the first item from an array then every other item in the array has to have it's index decremented by one. For small arrays this is negligible, but for arrays of non trivial sizes this can slow down your program to a stand still, especially if it's done many times over. So if you're working with a data set of non-trivial size, make sure you think about how much you're moving items on your array around.
+
+To learn the basics of arrays you can read this guide from [w3schools][array basics] and to dive deeper you can read the documentation from [mozilla][array documentation].
 
 ## Section 4: Arrays
 ### [4.1][4.1]: Use the literal syntax for array creation. eslint: [no-array-constructor][no-array-constructor]
