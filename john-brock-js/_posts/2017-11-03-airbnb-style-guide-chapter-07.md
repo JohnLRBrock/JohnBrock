@@ -1,7 +1,7 @@
 ---
 layout: post
 blog: john-brock-js
-title: "ELI50: Airbnb JavaScript Style Guide Section 7: Functions "
+title: "ELI50: Airbnb JavaScript Style Guide Section 7: Functions"
 permalink: "/john-brock-js/airbnb-styleguide-section-7"
 ---
 
@@ -28,7 +28,7 @@ JavaScript has this fun feature where if you don't supply a function the argumen
 ### [7.8][7.8]: Avoid side effects with default parameters.
 A **side effect** is when a function modifies something outside of its scope. In Airbnb's example the function is modifying the variable b which is defined outside the function. This goes against the rule of encapsulation and can make your programs have strange behaviors and even stranger bugs.
 ### [7.10][7.10]: Never use the Function constructor to create a new function.
-I talked about why eval() is bad in the [strings]({% post_url 2017-09-02-airbnb-style-guide-section-6 %}) section. Just like with eval(), if you're not careful, this could allow malicious users to insert and run their own code in your program. It's best not use it at all so you don't have to worry about this vulnerability.
+I talked about why eval() is bad in the [strings][section 6] section. Just like with eval(), if you're not careful, this could allow malicious users to insert and run their own code in your program. It's best not use it at all so you don't have to worry about this vulnerability.
 ### [7.14][7.14]: Prefer the use of the spread operator ... to call variadic functions.
 ># What are variadic functions?
 
@@ -57,6 +57,7 @@ Next Saturday I'll explain arrow functions. If you enjoyed this post or just wan
 [7.14]: https://github.com/airbnb/javascript#functions--spread-vs-apply
 [7.15]: https://github.com/airbnb/javascript#functions--signature-invocation-indentation
 
+[part 6]: http://johnbrock.io/john-brock-js/airbnb-styleguide-section-6
 
 [hoisting basics]: https://www.w3schools.com/js/js_hoisting.asp
 

@@ -1,5 +1,5 @@
 ---
-title: Book Review: Bridge of Birds
+title: "Book Review: Bridge of Birds"
 blog: brock-of-ages
 layout: post
 permalink:
