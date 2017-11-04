@@ -3,7 +3,7 @@ layout: page
 title: Portfolio
 permalink: /portfolio/
 ---
-<br>
+
 <div class="project">
   <a href="https://khanthulhu.github.io/tic-tac-toe/">
     <img class="tic-tac-toe" src="/assets/portfolio/sqtictactoe.png" alt="three board tic tac toe">
