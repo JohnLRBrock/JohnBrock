@@ -3,7 +3,11 @@ layout: page
 title: Portfolio
 permalink: /portfolio/
 ---
+<h1>I want to build the web with excellence</h1>
+<p>A year ago I decided to take a risk and quit my job in Behavior Analysis. *why?* I believe I can have a greater impact with web development.</p>
 
+<h1>Projects</h1>
+<br>
 <div class="project">
   <a href="https://khanthulhu.github.io/tic-tac-toe/">
     <img class="tic-tac-toe" src="/assets/portfolio/sqtictactoe.png" alt="three board tic tac toe">
