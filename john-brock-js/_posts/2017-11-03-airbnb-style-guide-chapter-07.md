@@ -24,15 +24,19 @@ According to [Mozilla][arguments object]
 Making one of your function's parameters `arguments` will overwrite the default `arguments` and you won't be able to use it.
 
 ### [7.7][7.7]: Use default parameter syntax rather than mutating function arguments.
-JavaScript has this fun feature where if you don't supply a function the arguments it was expecting, it tries to run it anyways without giving you an error. You *could* use this feature, as shown in Airbnb's example to create a default value in case no argument was given, but that requires changing, or **mutating** the argument and that's bad practice. Instead, use the assignment operator (=) inside the parenthesis of a function and JavaScript will know to set the parameter equal to that if no value is given when the function is called. 
+JavaScript has this fun feature where if you don't supply a function the arguments it was expecting, it tries to run it anyways without giving you an error. You *could* use this feature, as shown in Airbnb's example to create a default value in case no argument was given, but that requires changing, or **mutating** the argument and that's bad practice. Instead, use the assignment operator (=) inside the parenthesis of a function and JavaScript will know to set the parameter equal to that if no value is given when the function is called.
+
 ### [7.8][7.8]: Avoid side effects with default parameters.
 A **side effect** is when a function modifies something outside of its scope. In Airbnb's example the function is modifying the variable b which is defined outside the function. This goes against the rule of encapsulation and can make your programs have strange behaviors and even stranger bugs.
+
 ### [7.10][7.10]: Never use the Function constructor to create a new function.
 I talked about why eval() is bad in the [strings][section 6] section. Just like with eval(), if you're not careful, this could allow malicious users to insert and run their own code in your program. It's best not use it at all so you don't have to worry about this vulnerability.
+
 ### [7.14][7.14]: Prefer the use of the spread operator ... to call variadic functions.
 ># What are variadic functions?
 
 A variadic function is one that can accept different numbers of variables as arguments. This can give certain functions more flexibility and can make for more flexible and readable code.
+
 ### [7.15][7.15]: Functions with multiline signatures, or invocations, should be indented just like every other multiline list in this guide: with each item on a line by itself, with a trailing comma on the last item.
 When you have code that, when on a single line would be too long, you can usually spread them out to several lines to make them more manageable and easier to read. Although the examples given by Airbnb don't seem easier to read them having them on a single line, imagine if each of the variables were several words long or involved function invocations. Things would quickly get out of hand.
 

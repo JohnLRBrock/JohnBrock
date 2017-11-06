@@ -8,9 +8,9 @@ permalink:
 
 ## From Inception to Launch
 
-This series will chronicle my development of a web app, from inception to launch, and describe my process along the way covering, planning, design, development, and launch.
+This series will chronicle my development of a web app, from inception to launch, and describe my process along the way. I'll cover planning, design, development, and launch.
 
-In this article I'll show how I come up with ideas for apps, figure out which ideas are worth pursuing, and decide what tools to use to build them.
+In part one I'll show how I come up with ideas, figure out which ideas are worth pursuing, and what research you need to do before you begin.
 
 ## Who is this for?
 This series is for the person who has made a few websites but doesn't know where to go from there. We'll wear many hats, doing work in everything from back-end, to front-end, to design. I'll be showing you tools, best practices, and design patterns that help break down complex problems, and make the build process more manageable.
