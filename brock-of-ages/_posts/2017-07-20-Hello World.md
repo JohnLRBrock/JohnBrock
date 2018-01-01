@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hello World
 blog: brock-of-ages
+title: Hello World
 ---
 This is the inaugural post for my personal/self improvement blog.
 
