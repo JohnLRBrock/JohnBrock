@@ -21,8 +21,8 @@ description: > # this means to ignore newlines until "baseurl:"
   John Brock is a pragmatic science minded web developer based in Tampa, Florida.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://JohnBrock.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Khanthulhu
-github_username:  Khanthulhu
+twitter_username: JohnLRBrock
+github_username:  JohnLRBrock
 linkedin_username: john-brock-71193562
 
 blogs: 
