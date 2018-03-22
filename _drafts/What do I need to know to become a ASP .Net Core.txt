@@ -1,0 +1,38 @@
+#What do I need to know to become a ASP .Net Core developer?
+// Don't worry about ordering/grouping. Each of these things are more or less mandatory. 
+// Start with explanations for each thing and build a curriculum from there.
+
+#General Tools
+Git/Version Control
+Visual Studio
+TDD
+The command line
+
+#Internet Fundamentals
+How the internet works
+Servers
+HTTP
+
+#Back end
+C#
+  Algorithms
+  Data Types
+  Object Oriented Programming
+SQL
+Data Structures
+Entity Framework Core
+Routing
+Bindings
+LINQ
+Security
+Jobs?
+
+#front end
+HTML
+  Tags
+  Box Model
+CSS
+ASP tag helpers
+JavaScript
+Forms
+
